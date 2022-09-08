@@ -49,13 +49,17 @@ const Portfolio = () => {
         >
 
           <div className='pb-6 mx-2 py-2'>
-            <img src={amigaria} alt="" className=' h-48 w-80 mx-auto my-2 shadow-lg rounded-md hover:scale-105 hover:cursor-pointer transition-all duration-500 ease-in-out' />
-            <p className='text-center'>Página accesibe de integración social</p>
+            <a href="https://www.amigaria.com" target={'_blank'} rel="noreferrer">
+              <img src={amigaria} alt="" className=' h-48 w-80 mx-auto my-2 shadow-lg rounded-md hover:scale-105 hover:cursor-pointer transition-all duration-500 ease-in-out' />
+              <p className='text-center'>Página accesibe de integración social</p>
+            </a>
           </div>
 
           <div className='pb-6 mx-2 py-2'>
-            <img src={apv} alt="" className='h-48 w-80 mx-auto my-2 shadow-lg rounded-md hover:scale-105 hover:cursor-pointer transition-all duration-500 ease-in-out' />
-            <p className='text-center'>Página adminitracion de pacientes de veterinaria</p>
+            <a href="https://golden-melba-970593.netlify.app" target={'_blank'} rel="noreferrer">
+              <img src={apv} alt="" className='h-48 w-80 mx-auto my-2 shadow-lg rounded-md hover:scale-105 hover:cursor-pointer transition-all duration-500 ease-in-out' />
+              <p className='text-center'>Página adminitracion de pacientes de veterinaria</p>
+            </a>
           </div>
 
           <div className='pb-6 mx-2 py-2'>
