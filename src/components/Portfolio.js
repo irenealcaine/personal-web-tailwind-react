@@ -4,6 +4,7 @@ import apv from '../images/apv.png'
 import guitarla from '../images/GuitarLA.png'
 import vue from '../images/vue.png'
 import react from '../images/react.png'
+import todolistapp from '../images/todolistapp.png'
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -70,8 +71,10 @@ const Portfolio = () => {
           </div>
 
           <div className='pb-6 mx-2 py-2'>
-            <img src={vue} alt="" className='h-48 w-80 mx-auto my-2 shadow-lg rounded-md hover:scale-105 hover:cursor-pointer transition-all duration-500 ease-in-out' />
-            <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <a href="https://melodic-pony-2cdb8b.netlify.app" target={'_blank'} rel="noreferrer">
+              <img src={todolistapp} alt="" className='h-48 w-80 mx-auto my-2 shadow-lg rounded-md hover:scale-105 hover:cursor-pointer transition-all duration-500 ease-in-out' />
+              <p className='text-center'>App de lista de tareas pendientes</p>
+            </a>
           </div>
 
           <div className='pb-6 mx-2 py-2'>
