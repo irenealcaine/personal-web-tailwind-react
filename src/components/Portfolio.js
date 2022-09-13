@@ -2,7 +2,6 @@ import React from 'react'
 import amigaria from '../images/amigaria.png'
 import apv from '../images/apv.png'
 import guitarla from '../images/GuitarLA.png'
-import vue from '../images/vue.png'
 import react from '../images/react.png'
 import todolistapp from '../images/todolistapp.png'
 
