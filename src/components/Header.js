@@ -3,6 +3,9 @@ import { useState } from 'react'
 import github from '../images/github.png'
 import linkedin from '../images/linkedin.png'
 import codepen from '../images/codepen.jpg'
+import openMenu from '../images/menu.png'
+import closeMenu from '../images/close.png'
+
 
 const Header = () => {
 
@@ -12,8 +15,12 @@ const Header = () => {
     <>
       <div className='bg-violet-900 shadow-lg py-4 px-7 md:flex md:justify-between sticky top-0 z-50'>
         <a href='#home' className='text-2xl font-caveat'>Irene</a>
-        <span className='absolute top-0 right-0 md:hidden p-2'
-          onClick={() => { setOpen(!open) }}>{open ? 'X' : '='}</span>
+        <img
+          className='absolute top-2 right-2 md:hidden p-2 w-10 h-10'
+          src={`${open ? closeMenu : openMenu}`}
+          alt=""
+          onClick={() => { setOpen(!open) }}
+        />
         <div className={`${open ? '' : 'hidden'} md:flex md:w-1/3 md:justify-between`}>
           <div className={`flex flex-col md:flex-row md:items-center`}>
 
