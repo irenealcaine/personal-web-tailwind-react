@@ -16,7 +16,7 @@ const Header = () => {
       <div className='bg-violet-900 shadow-lg py-4 px-7 md:flex md:justify-between sticky top-0 z-50 font-caveat'>
         <a href='#home' className='text-3xl '>Irene</a>
         <img
-          className='absolute top-2 right-2 md:hidden p-2 w-10 h-10'
+          className='absolute top-4 right-7 md:hidden w-8 h-8'
           src={`${open ? closeMenu : openMenu}`}
           alt=""
           onClick={() => { setOpen(!open) }}
@@ -24,8 +24,8 @@ const Header = () => {
         <div className={`${open ? '' : 'hidden'} md:flex md:w-1/2 md:justify-end text-xl`}>
           <div className={`flex flex-col md:flex-row md:items-center pr-7 md:mt-0 mt-2`}>
 
-            <a href="#portfolio" className='px-2 hover:underline'>Portfolio </a>
-            <a href="#skills" className='px-2 hover:underline'>Skills</a>
+            <a href="#portfolio" className='px-2 hover:underline'>Proyectos</a>
+            <a href="#skills" className='px-2 hover:underline'>Habilidades</a>
           </div>
           <div className='md:flex md:items-center'>
             <div className='flex items-center mx-2 md:mt-0 mt-2'>
@@ -33,7 +33,7 @@ const Header = () => {
               <a href="https://www.linkedin.com/in/irenealcaine/" target={'_blank'} rel="noreferrer"><img src={linkedin} alt="" className='h-8 mx-2 hover:filter hover:invert' /></a>
               <a href="https://www.codepen.io/ialcaine" target={'_blank'} rel="noreferrer"><img src={codepen} alt="" className='h-8 hover:filter hover:invert' /></a>
             </div>
-            <button className='bg-white text-violet-900 font-bold border-2 border-violet-900 rounded py-1 px-6 mx-2 hover:bg-violet-900 hover:text-white hover:border-white md:mt-0 mt-4'>Contacto</button>
+            <a href="#contact"><button className='bg-white text-violet-900 font-bold border-2 border-violet-900 rounded py-1 px-6 mx-2 hover:bg-violet-900 hover:text-white hover:border-white md:mt-0 mt-4'>Charlemos</button></a>
           </div>
         </div>
       </div>

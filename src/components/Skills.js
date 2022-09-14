@@ -28,11 +28,11 @@ const Skills = () => {
   return (
     <>
       <div className='' id='skills'>
-        <h2 className='pt-16 text-center text-6xl text-violet-700 font-caveat'>Skills</h2>
+        <h2 className='pt-20 text-center text-6xl text-violet-700 font-caveat'>Habilidades</h2>
 
         <div>
           <div className='flex flex-col items-center md:items-start md:flex-row justify-center'>
-            <div className='text-center w-2/3 md:w-1/4 p-2 m-3'>
+            <div className='text-center w-5/6 md:w-1/4 p-2 m-3'>
               <span className=''>Frontend y web development</span>
               <div className='flex flex-wrap justify-center'>
                 <img src={html} alt="" className='h-14 m-2' />
@@ -44,8 +44,8 @@ const Skills = () => {
               </div>
             </div>
 
-            <div className='text-center w-2/3 md:w-1/4 p-2 m-3'>
-              <span className=''>Other skills</span>
+            <div className='text-center w-5/6 md:w-1/4 p-2 m-3'>
+              <span className=''>Otras habilidades</span>
               <div className='flex flex-wrap justify-center'>
                 <img src={vite} alt="" className='h-14 m-2' />
                 <img src={git} alt="" className='h-14 m-2' />
@@ -57,8 +57,8 @@ const Skills = () => {
               </div>
             </div>
 
-            <div className='text-center w-2/3 md:w-1/4 p-2 m-3'>
-              <span className=''>Working on</span>
+            <div className='text-center w-5/6 md:w-1/4 p-2 m-3'>
+              <span className=''>Próximamente</span>
               <div className='flex flex-wrap justify-center'>
                 <img src={bootstrap} alt="" className='h-14 m-2' />
                 <img src={flutter} alt="" className='h-14 m-2' />
@@ -70,12 +70,12 @@ const Skills = () => {
         </div>
 
         <div className='flex flex-col items-center md:items-start md:flex-row justify-center'>
-          <div className='w-2/3 md:w-1/3 mx-4'>
+          <div className='w-5/6 md:w-1/3 mx-4 mt-4'>
             <h3 className='text-center'>Formación</h3>
-            <p className=' border-2 border-violet-900 py-2 px-4 rounded-lg'>Estudié ingeniería y luego desarrollo web</p>
+            <p className=' border-2 border-violet-900 py-2 px-4 rounded-lg mt-2'>Estudié ingeniería y luego desarrollo web</p>
             <button
               onClick={() => { setFormOpen(!formOpen) }}
-              className='border rounded-lg uppercase font-bold py-1 px-4 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out'
+              className='border rounded-lg uppercase font-bold py-1 px-4 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out w-full mt-2 '
             >{formOpen ? '-' : '+'} Info</button>
             <div className={`${formOpen ? '' : 'hidden'}`}>
               <h4>Programación y diseño front-end</h4>
@@ -98,13 +98,13 @@ const Skills = () => {
 
             </div>
           </div>
-          <div className='w-2/3 md:w-1/3 mx-4'>
+          <div className='w-5/6 md:w-1/3 mx-4  mt-4'>
             <h3 className='text-center'>Experiencia</h3>
-            <p className='border-2 border-violet-900 py-2 px-4 rounded-lg'>No tengo experiencia técnica pero si de soft skills</p>
+            <p className='border-2 border-violet-900 py-2 px-4 rounded-lg mt-2'>No tengo experiencia técnica pero si de soft skills</p>
 
             <button
               onClick={() => { setExpOpen(!expOpen) }}
-              className='border rounded-lg uppercase font-bold py-1 px-4 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out'
+              className='border rounded-lg uppercase font-bold py-1 px-4 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out w-full mt-2 '
             >{expOpen ? '-' : '+'} Info</button>
             <div className={`${expOpen ? '' : 'hidden'} `}>
               <h4>Developer en amigaria.com</h4>

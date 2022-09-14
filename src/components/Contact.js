@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import phone from '../images/phone.png'
-import mail from '../images/mail.png'
+// import phone from '../images/phone.png'
+// import mail from '../images/mail.png'
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 
@@ -34,12 +34,13 @@ const Contact = () => {
 
   return (
     <>
-      <div className=''>
-        <h2 className='pt-16 text-center text-6xl text-violet-700 font-caveat'>Contacto</h2>
-        <div className='flex flex-col items-center md:items-start md:flex-row justify-center'>
+      <div id="contact">
+        <h2 className='pt-20 text-center text-6xl text-violet-700 font-caveat'>Contacto</h2>
+        {/* <div className='flex flex-col items-center md:items-start md:flex-row justify-center'>
           <div className='mx-3 p-1'><img src={mail} alt="" className='h-6 inline-block' /> irenealcainealvarez@gmail.com</div>
           <div className='mx-3 p-1'><img src={phone} alt="" className='h-6 inline-block' /> +34 629 88 21 29</div>
-        </div>
+        </div> */}
+        <p className='text-center'>¿En qué puedo ayudarte?</p>
 
         <form
           ref={form}
@@ -83,7 +84,7 @@ const Contact = () => {
             <button
               className='border rounded-lg uppercase font-bold p-1 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out px-4 py-2'
               type='submit'
-            >Enviar correo</button>
+            >Enviar email</button>
 
           </div>
           {result ? <Result /> : null}
