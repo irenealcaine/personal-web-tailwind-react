@@ -88,7 +88,7 @@ const Skills = () => {
 
                   <ul className='indent-4 text-justify mt-2'>
                     <li>
-                      <p>JavaScript de 0 a experto</p>
+                      <p>JavaScript de 0 a experto.</p>
                     </li>
 
                   </ul>
@@ -99,10 +99,10 @@ const Skills = () => {
                   <p><span className='italic text-violet-300'>Escuela de organización industrial (EOI), online</span> | Mar 2022 - Jun 2022, 265 horas lectivas</p>
                   <ul className='indent-4 text-justify mt-2'>
                     <li>
-                      <p>Contenido: HTML5, CSS3 avanzado, JavaScript, Git, NPM, PostCSS, Vue.js, Vuex, responsive design, frameworks CSS, SEO, optimización, entre otras cosas</p>
+                      <p>Contenido: HTML5, CSS3 avanzado, JavaScript, Git, NPM, PostCSS, Vue.js, Vuex, responsive design, frameworks CSS, SEO, optimización, entre otras cosas.</p>
                     </li>
                     <li>
-                      <p>Proyecto en grupo de desarrollo de una página web completa, <a href="https://www.amigaria.com" target={'_blank'} rel="noreferrer" className='underline'>www.amigaria.com</a>, una web app 100% accesible de integración social</p>
+                      <p>Proyecto en grupo de desarrollo de una página web completa, <a href="https://www.amigaria.com" target={'_blank'} rel="noreferrer" className='underline'>www.amigaria.com</a>, una web app 100% accesible de integración social.</p>
                     </li>
                   </ul>
                 </li>
@@ -116,7 +116,7 @@ const Skills = () => {
                       <p>Especialización en máquinas y motores.</p>
                     </li>
                     <li>
-                      <p>Trabajo de fin de grado: Simulación de movimientos peristálticos mediante elementos finitos.</p>
+                      <p>Trabajo de fin de grado: Simulación mediante elementos finitos de movimientos peristálticos en conductos.</p>
                     </li>
                     <li>
                       <p>Erasmus en Viseu, Portugal de Sep 2015 a Feb 2016</p>
