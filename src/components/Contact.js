@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <>
       <div id="contact">
-        <h2 className='pt-20 text-center text-6xl text-violet-700 font-caveat'>Contacto</h2>
+        <h2 className='pt-20 text-center text-6xl md:text-8xl text-violet-700 font-caveat'>Contacto</h2>
         {/* <div className='flex flex-col items-center md:items-start md:flex-row justify-center'>
           <div className='mx-3 p-1'><img src={mail} alt="" className='h-6 inline-block' /> irenealcainealvarez@gmail.com</div>
           <div className='mx-3 p-1'><img src={phone} alt="" className='h-6 inline-block' /> +34 629 88 21 29</div>

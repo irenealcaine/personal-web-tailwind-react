@@ -43,7 +43,7 @@ const Portfolio = () => {
 
 
       <div className='' id='portfolio'>
-        <h2 className='pt-20 text-center text-6xl text-violet-700 font-caveat mb-4'>Proyectos</h2>
+        <h2 className='pt-20 text-center text-6xl md:text-8xl text-violet-700 font-caveat mb-4'>Proyectos</h2>
 
 
         <Carousel
