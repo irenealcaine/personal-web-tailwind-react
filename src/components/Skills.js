@@ -17,11 +17,11 @@ const Skills = () => {
       <div className='' id='skills'>
         <h2 className='pt-20 text-center text-6xl md:text-8xl text-violet-700 font-caveat'>Habilidades</h2>
 
-        <div className='flex flex-col md:flex-row justify-center items-center md:items-start'>
+        <div className='flex flex-col md:flex-row justify-center items-center md:items-start md:px-10'>
 
           {skillsData.map((data, key) => {
             return (
-              <div key={key} className='w-5/6 md:w-1/4'>
+              <div key={key} className='w-5/6 md:w-1/3'>
                 <div className='text-center p-2 my-3'>
                   <h3 className=' text-xl underline mb-4 decoration-violet-600 decoration-4 underline-offset-8'>{data.title}</h3>
                   <div className='flex flex-wrap justify-center border-2 border-violet-900 rounded-xl p-1'>
