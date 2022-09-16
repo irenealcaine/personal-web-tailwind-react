@@ -9,6 +9,8 @@ import vue from '../../images/vue.png'
 import mongo from '../../images/mongo.svg'
 import nodejs from '../../images/nodejs.png'
 import bootstrap from '../../images/bootstrap.png'
+import sass from '../../images/sass.png'
+import express from '../../images/express.png'
 
 export const portfolioData = [
 
@@ -18,6 +20,7 @@ export const portfolioData = [
     title: "Web 100% accesible de integración social",
     icons: [
       vue,
+      sass
     ]
   }, {
     url: "https://golden-melba-970593.netlify.app",
@@ -25,6 +28,7 @@ export const portfolioData = [
     title: "Administración de pacientes de veterinaria",
     icons: [
       mongo,
+      express,
       react,
       nodejs
     ]
