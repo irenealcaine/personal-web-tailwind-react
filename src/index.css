@@ -13,3 +13,11 @@ html {
     animation-delay: 4s;
   }
 }
+
+@font-face {
+  font-family: 'Caveat';
+  src: url(./fonts/Caveat-Regular.ttf);
+  src: url(./fonts/Caveat-Bold.ttf);
+  src: url(./fonts/Caveat-Medium.ttf);
+  src: url(./fonts/Caveat-SemiBold.ttf);
+}

@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'caveat': ['Caveat', 'cursive'],
+        'caveat': ['Caveat', 'sans-serif'],
       },
       animation: {
         blob: "blob 7s infinite"
