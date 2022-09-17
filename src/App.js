@@ -20,7 +20,6 @@ function App() {
       <div>
         <Header />
         <Portfolio />
-        {/* <Carousel /> */}
         <Skills />
         <Contact />
         <Footer />
