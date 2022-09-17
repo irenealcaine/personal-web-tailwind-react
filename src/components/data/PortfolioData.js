@@ -44,7 +44,7 @@ export const portfolioData = [
     img: todolistapp,
     title: "App de lista de tareas pendientes",
     icons: [
-      react,
+      vue,
       tailwind
     ]
   },
