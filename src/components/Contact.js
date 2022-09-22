@@ -20,7 +20,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_2c4orgb', 'template_35mhdvd', form.current, 'eywWsECZB8iEJ2dhj')
+    emailjs.sendForm(process.env.REACT_APP_SERVICE, process.env.REACT_APP_TEMPLATE, form.current, process.env.REACT_APP_KEY)
       .then((result) => {
         console.log(result.text);
       }, (error) => {
