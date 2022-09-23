@@ -2,6 +2,7 @@ import amigaria from '../../images/amigaria.png'
 import apv from '../../images/apv.png'
 import guitarla from '../../images/GuitarLA.png'
 import todolistapp from '../../images/todolistapp.png'
+import weatherApp from '../../images/weatherApp.png'
 
 import react from '../../images/react.png'
 import tailwind from '../../images/tailwind.png'
@@ -11,6 +12,8 @@ import nodejs from '../../images/nodejs.png'
 import bootstrap from '../../images/bootstrap.png'
 import sass from '../../images/sass.png'
 import express from '../../images/express.png'
+import js from '../../images/js.png'
+
 
 export const portfolioData = [
 
@@ -45,6 +48,14 @@ export const portfolioData = [
     title: "App de lista de tareas pendientes",
     icons: [
       vue,
+      tailwind
+    ]
+  }, {
+    url: "https://prismatic-chaja-00b433.netlify.app",
+    img: weatherApp,
+    title: "App de previsión del tiempo",
+    icons: [
+      js,
       tailwind
     ]
   },
