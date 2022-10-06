@@ -15,7 +15,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className='min-h-screen flex flex-col' id='skills'>
+      <div className='md:min-h-screen flex flex-col' id='skills'>
         <h2 className='pt-20 text-center text-6xl md:text-8xl text-violet-700 font-caveat'>Habilidades</h2>
         <div className='my-auto'>
           <div className='flex flex-col md:flex-row justify-center items-center md:items-start md:px-10'>

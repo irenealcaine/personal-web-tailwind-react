@@ -34,7 +34,7 @@ const Contact = () => {
 
   return (
     <>
-      <div id="contact" className='min-h-screen flex flex-col'>
+      <div id="contact" className='md:min-h-screen flex flex-col'>
         <h2 className='pt-20 text-center text-6xl md:text-8xl text-violet-700 font-caveat'>Contacto</h2>
         <div className='my-auto'>
           <p className='text-center text-xl my-2'>¿En qué puedo ayudarte?</p>
