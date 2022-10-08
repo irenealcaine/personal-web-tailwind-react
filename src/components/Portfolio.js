@@ -34,7 +34,7 @@ const Portfolio = () => {
 
       <div className='md:min-h-screen flex flex-col' id='portfolio'>
         <h2 className='pt-20 text-center text-6xl md:text-8xl text-violet-700 font-caveat mb-8'>Proyectos</h2>
-        <div className='my-auto'>
+        <div className='md:pt-20'>
           <Carousel
             swipeable={false}
             draggable={false}
@@ -42,7 +42,8 @@ const Portfolio = () => {
             ssr={true}
             infinite={true}
             autoPlay={true}
-            autoPlaySpeed={1000}
+            autoPlaySpeed={2000}
+            customTransition="all 1.5s"
             transitionDuration={1500}
           >
 

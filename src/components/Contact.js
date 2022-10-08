@@ -36,7 +36,7 @@ const Contact = () => {
     <>
       <div id="contact" className='md:min-h-screen flex flex-col'>
         <h2 className='pt-20 text-center text-6xl md:text-8xl text-violet-700 font-caveat'>Contacto</h2>
-        <div className='my-auto'>
+        <div className='md:pt-20'>
           <p className='text-center text-xl my-2'>¿En qué puedo ayudarte?</p>
           <div className='flex flex-col px-4 md:px-0 py-4 md:items-start md:flex-row justify-center'>
             <div className='mx-3 p-1'><img src={mail} alt="" className='h-6 inline-block' /> irenealcainealvarez@gmail.com</div>
