@@ -41,6 +41,9 @@ const Portfolio = () => {
             responsive={responsive}
             ssr={true}
             infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={1000}
+            transitionDuration={1500}
           >
 
             {
