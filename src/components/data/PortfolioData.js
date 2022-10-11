@@ -63,7 +63,7 @@ export const portfolioData = [
   }, {
     url: "https://deft-moonbeam-671bbb.netlify.app",
     img: crypto,
-    title: "App de segimiento de criptos",
+    title: "App de seguimiento de criptos",
     icons: [
       react,
       mui
