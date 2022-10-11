@@ -3,6 +3,7 @@ import apv from '../../images/apv.png'
 import guitarla from '../../images/GuitarLA.png'
 import todolistapp from '../../images/todolistapp.png'
 import weatherApp from '../../images/weatherApp.png'
+import crypto from '../../images/crypto.png'
 
 import react from '../../images/react.png'
 import tailwind from '../../images/tailwind.png'
@@ -13,6 +14,7 @@ import bootstrap from '../../images/bootstrap.png'
 import sass from '../../images/sass.png'
 import express from '../../images/express.png'
 import js from '../../images/js.png'
+import mui from '../../images/mui.png'
 
 
 export const portfolioData = [
@@ -57,6 +59,14 @@ export const portfolioData = [
     icons: [
       js,
       tailwind
+    ]
+  }, {
+    url: "https://deft-moonbeam-671bbb.netlify.app",
+    img: crypto,
+    title: "App de segimiento de criptos",
+    icons: [
+      react,
+      mui
     ]
   },
 ]

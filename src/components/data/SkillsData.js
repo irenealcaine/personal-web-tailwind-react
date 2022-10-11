@@ -17,6 +17,7 @@ import express from '../../images/express.png'
 import bootstrap from '../../images/bootstrap.png'
 import flutter from '../../images/flutter.svg'
 import wordpress from '../../images/wordpress.png'
+import mui from '../../images/mui.png'
 
 export const skillsData = [
   {
@@ -46,7 +47,8 @@ export const skillsData = [
     icons: [
       bootstrap,
       flutter,
-      wordpress
+      wordpress,
+      mui
     ]
   }
 
