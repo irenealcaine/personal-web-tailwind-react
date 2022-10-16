@@ -21,7 +21,7 @@ import mui from '../../images/mui.png'
 
 export const skillsData = [
   {
-    title: "Frontend y desarrollo web",
+    title: "Frontend",
     icons: [
       html,
       css,
@@ -32,7 +32,7 @@ export const skillsData = [
       react
     ]
   }, {
-    title: "Otras habilidades",
+    title: "Otras",
     icons: [
       vite,
       git,
@@ -43,7 +43,7 @@ export const skillsData = [
       express
     ]
   }, {
-    title: "Próximamente",
+    title: "Próx.",
     icons: [
       bootstrap,
       flutter,

@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <>
-      <div className='bg-violet-900 shadow-lg py-4 px-7 md:flex md:justify-between sticky top-0 z-50 font-caveat'>
+      <div className='bg-violet-700 shadow-lg py-4 px-7 md:flex md:justify-between sticky top-0 z-50 font-caveat'>
         <a href='#home' className='text-3xl '>Irene</a>
         <img
           className='absolute top-4 right-7 md:hidden w-8 h-8'
