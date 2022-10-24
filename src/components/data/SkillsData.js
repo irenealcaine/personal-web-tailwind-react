@@ -13,6 +13,7 @@ import mongo from '../../images/mongo.svg'
 import npm from '../../images/npm.svg'
 import nodejs from '../../images/nodejs.png'
 import express from '../../images/express.png'
+import firebase from '../../images/firebase.png'
 
 import bootstrap from '../../images/bootstrap.png'
 import flutter from '../../images/flutter.svg'
@@ -40,7 +41,8 @@ export const skillsData = [
       figma,
       mongo,
       nodejs,
-      express
+      express,
+      firebase
     ]
   }, {
     title: "Próx.",
