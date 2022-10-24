@@ -1,6 +1,5 @@
 import amigaria from '../../images/amigaria.png'
 import apv from '../../images/apv.png'
-import guitarla from '../../images/GuitarLA.png'
 import todolistapp from '../../images/todolistapp.png'
 import weatherApp from '../../images/weatherApp.png'
 import crypto from '../../images/crypto.png'
