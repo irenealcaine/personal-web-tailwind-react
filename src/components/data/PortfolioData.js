@@ -3,6 +3,8 @@ import apv from '../../images/apv.png'
 import todolistapp from '../../images/todolistapp.png'
 import weatherApp from '../../images/weatherApp.png'
 import crypto from '../../images/crypto.png'
+import spotyclon from '../../images/spotyclon.png'
+
 
 import react from '../../images/react.png'
 import tailwind from '../../images/tailwind.png'
@@ -60,6 +62,14 @@ export const portfolioData = [
     icons: [
       react,
       mui
+    ]
+  }, {
+    url: "https://majestic-macaron-741bec.netlify.app/",
+    img: spotyclon,
+    title: "Clon de spotify",
+    icons: [
+      react,
+      tailwind
     ]
   },
 ]
