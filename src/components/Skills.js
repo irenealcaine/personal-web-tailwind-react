@@ -95,7 +95,7 @@ const Skills = () => {
             </Tabs>
           </div>
 
-          <a href={CV} download="CV_Irene_Alcaine.pdf"><p className='md:text-3xl text-xl mt-8 rounded-xl indent-4 md:w-1/2 w-5/6 mx-auto text-violet-300 text-center border-4 border-violet-900 py-2 hover:cursor-pointer hover:bg-violet-900 hover:text-white transition-all duration-500 ease-in-out'>Descargar CV</p></a>
+          <a href={CV} download="CV_Irene_Alcaine.pdf"><p className='md:text-3xl text-xl mt-8 rounded-xl indent-4 md:w-1/2 w-5/6 mx-auto text-violet-300 text-center border-4 border-violet-900 py-2 hover:cursor-pointer hover:bg-violet-900 hover:text-white transition-all duration-500 ease-in-out animate-pulse'>Descargar CV</p></a>
 
         </div>
       </div >

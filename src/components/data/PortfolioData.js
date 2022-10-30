@@ -4,6 +4,7 @@ import todolistapp from '../../images/todolistapp.png'
 import weatherApp from '../../images/weatherApp.png'
 import crypto from '../../images/crypto.png'
 import spotyclon from '../../images/spotyclon.png'
+import netfliclon from '../../images/netfliclon.png'
 
 
 import react from '../../images/react.png'
@@ -66,10 +67,19 @@ export const portfolioData = [
   }, {
     url: "https://majestic-macaron-741bec.netlify.app/",
     img: spotyclon,
-    title: "Clon de spotify",
+    title: "Clon de Spotify",
     icons: [
       react,
       tailwind
+    ]
+  }, {
+    url: "https://magenta-halva-e5d59d.netlify.app/",
+    img: netfliclon,
+    title: "Clon de Netflix",
+    icons: [
+      react,
+      tailwind,
+      firebase
     ]
   },
 ]

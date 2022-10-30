@@ -9,7 +9,8 @@ module.exports = {
         'caveat': ['Caveat', 'sans-serif'],
       },
       animation: {
-        blob: "blob 7s infinite"
+        blob: "blob 7s infinite",
+        wiggle: 'wiggle 0.3s ease-in-out infinite',
       },
       keyframes: {
         blob: {
@@ -31,6 +32,10 @@ module.exports = {
           "100%": {
             transform: "translate(0px, 0px) scale(1)"
           },
+        },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
         }
       }
     },

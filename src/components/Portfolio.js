@@ -20,11 +20,11 @@ const Portfolio = () => {
       items: 3
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1
+      breakpoint: { max: 1024, min: 640 },
+      items: 2
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 640, min: 0 },
       items: 1
     }
   };
@@ -52,7 +52,7 @@ const Portfolio = () => {
 
                   <div key={key} className="mx-1">
                     <a href={data.url} target={'_blank'} rel="noreferrer">
-                      <img src={data.img} alt="" className='md:h-44 h-32 mx-auto my-2 shadow-lg rounded-md hover:scale-105 hover:cursor-pointer transition-all duration-500 ease-in-out' />
+                      <img src={data.img} alt="" className=' mx-auto my-2 shadow-lg rounded-md hover:scale-105 hover:cursor-pointer transition-all duration-500 ease-in-out' />
                       <p className='text-center'>{data.title}</p>
                     </a>
 
