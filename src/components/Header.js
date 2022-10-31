@@ -10,7 +10,6 @@ import closeMenu from '../images/close.png'
 const Header = () => {
 
   const [open, setOpen] = useState(false)
-
   return (
     <>
       <div className='bg-violet-700 shadow-lg py-4 px-7 md:flex md:justify-between sticky top-0 z-50 font-caveat'>

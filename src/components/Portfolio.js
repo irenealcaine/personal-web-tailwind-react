@@ -17,11 +17,11 @@ const Portfolio = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 2
     },
     tablet: {
       breakpoint: { max: 1024, min: 640 },
-      items: 2
+      items: 1
     },
     mobile: {
       breakpoint: { max: 640, min: 0 },
@@ -50,14 +50,15 @@ const Portfolio = () => {
               portfolioData.map((data, key) => {
                 return (
 
-                  <div key={key} className="mx-1">
+                  <div key={key} className="mx-2">
                     <a href={data.url} target={'_blank'} rel="noreferrer">
+                      <img src={data.favicon} alt='img' className='w-16 absolute rounded bg-violet-700/20 p-1 border-violet-700 border-2' />
                       <img src={data.img} alt="" className=' mx-auto my-2 shadow-lg rounded-md hover:scale-105 hover:cursor-pointer transition-all duration-500 ease-in-out' />
-                      <p className='text-center'>{data.title}</p>
+                      <p className='text-center text-xl'>{data.title}</p>
                     </a>
 
                     <div className='flex justify-center mt-2'>
-                      {data.icons.map(s => (<img src={s} alt="" className='h-6 px-1' />))}
+                      {data.icons.map(s => (<img src={s} alt="" className='h-6 md:h-10 px-1' />))}
                     </div>
                   </div>
                 )

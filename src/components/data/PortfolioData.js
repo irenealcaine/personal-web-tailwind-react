@@ -6,6 +6,13 @@ import crypto from '../../images/crypto.png'
 import spotyclon from '../../images/spotyclon.png'
 import netfliclon from '../../images/netfliclon.png'
 
+import amigariafav from '../../images/amigariafav.svg'
+import apvfav from '../../images/APVfav.png'
+import todofav from '../../images/todofav.svg'
+import sunfav from '../../images/sunfav.svg'
+import coinfav from '../../images/coinfav.svg'
+import melodyfav from '../../images/melodyfav.svg'
+import netfliclonfav from '../../images/netfliclonfav.jpg'
 
 import react from '../../images/react.png'
 import tailwind from '../../images/tailwind.png'
@@ -24,6 +31,7 @@ export const portfolioData = [
   {
     url: "https://www.amigaria.com",
     img: amigaria,
+    favicon: amigariafav,
     title: "Web 100% accesible de integración social",
     icons: [
       vue,
@@ -33,6 +41,7 @@ export const portfolioData = [
   }, {
     url: "https://golden-melba-970593.netlify.app",
     img: apv,
+    favicon: apvfav,
     title: "Administración de pacientes de veterinaria",
     icons: [
       mongo,
@@ -43,6 +52,7 @@ export const portfolioData = [
   }, {
     url: "https://melodic-pony-2cdb8b.netlify.app",
     img: todolistapp,
+    favicon: todofav,
     title: "App de lista de tareas pendientes",
     icons: [
       vue,
@@ -51,6 +61,7 @@ export const portfolioData = [
   }, {
     url: "https://prismatic-chaja-00b433.netlify.app",
     img: weatherApp,
+    favicon: sunfav,
     title: "App de previsión del tiempo",
     icons: [
       js,
@@ -59,6 +70,7 @@ export const portfolioData = [
   }, {
     url: "https://deft-moonbeam-671bbb.netlify.app",
     img: crypto,
+    favicon: coinfav,
     title: "Seguimiento de criptos",
     icons: [
       react,
@@ -67,6 +79,7 @@ export const portfolioData = [
   }, {
     url: "https://majestic-macaron-741bec.netlify.app/",
     img: spotyclon,
+    favicon: melodyfav,
     title: "Clon de Spotify",
     icons: [
       react,
@@ -75,6 +88,7 @@ export const portfolioData = [
   }, {
     url: "https://magenta-halva-e5d59d.netlify.app/",
     img: netfliclon,
+    favicon: netfliclonfav,
     title: "Clon de Netflix",
     icons: [
       react,
