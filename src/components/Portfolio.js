@@ -1,10 +1,10 @@
 import React from 'react'
 
-
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 import { portfolioData } from './data/PortfolioData.js'
+import github from '../images/github.png'
 
 
 const Portfolio = () => {
@@ -55,8 +55,10 @@ const Portfolio = () => {
                     <a href={data.url} target={'_blank'} rel="noreferrer">
                       <p className='text-start md:text-xl group-hover:underline decoration-violet-600'>{data.title}</p>
                       <img src={data.favicon} alt='img' className='w-12 md:w-16 absolute rounded bg-violet-700/40 p-1 border-violet-700 border-2 z-50 group-hover:scale-75 transition-all duration-500 ease-in-out' />
+                      <a href={data.github} target={'_blank'} rel="noreferrer">
+                        <img src={github} alt='img' className='w-8 md:w-12 absolute rounded bottom-20 right-2 bg-violet-900/80 p-1 border-violet-700 border-2 z-50 transition-all duration-500 ease-in-out' />
+                      </a>
                       <img src={data.img} alt="" className=' mx-auto my-2 shadow-lg rounded-md group-hover:scale-105 cursor-pointer transition-all duration-500 ease-in-out' />
-
                       <div className='flex justify-center mt-2'>
                         {data.icons.map(s => (<img src={s} alt="" className='h-6 md:h-10 md:px-2 px-1 group-hover:scale-75 transition-all duration-500 ease-in-out' />))}
                       </div>

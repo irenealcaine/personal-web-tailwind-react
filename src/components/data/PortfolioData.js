@@ -30,6 +30,7 @@ export const portfolioData = [
 
   {
     url: "https://www.amigaria.com",
+    github: "https://github.com/AmigariaWeb",
     img: amigaria,
     favicon: amigariafav,
     title: "Web 100% accesible de integración social",
@@ -40,6 +41,7 @@ export const portfolioData = [
     ]
   }, {
     url: "https://golden-melba-970593.netlify.app",
+    github: "https://github.com/irenealcaine/APV_MERN_frontend",
     img: apv,
     favicon: apvfav,
     title: "Administración de pacientes de veterinaria",
@@ -51,6 +53,7 @@ export const portfolioData = [
     ]
   }, {
     url: "https://melodic-pony-2cdb8b.netlify.app",
+    github: "https://github.com/irenealcaine/todo-vue",
     img: todolistapp,
     favicon: todofav,
     title: "App de lista de tareas pendientes",
@@ -60,6 +63,7 @@ export const portfolioData = [
     ]
   }, {
     url: "https://prismatic-chaja-00b433.netlify.app",
+    github: "https://github.com/irenealcaine/weather-API",
     img: weatherApp,
     favicon: sunfav,
     title: "App de previsión del tiempo",
@@ -69,6 +73,7 @@ export const portfolioData = [
     ]
   }, {
     url: "https://deft-moonbeam-671bbb.netlify.app",
+    github: "https://github.com/irenealcaine/cryptotracker",
     img: crypto,
     favicon: coinfav,
     title: "Seguimiento de criptos",
@@ -78,6 +83,7 @@ export const portfolioData = [
     ]
   }, {
     url: "https://majestic-macaron-741bec.netlify.app/",
+    github: "https://github.com/irenealcaine/spotyclon",
     img: spotyclon,
     favicon: melodyfav,
     title: "Clon de Spotify",
@@ -87,6 +93,7 @@ export const portfolioData = [
     ]
   }, {
     url: "https://magenta-halva-e5d59d.netlify.app/",
+    github: "https://github.com/irenealcaine/netfliclon",
     img: netfliclon,
     favicon: netfliclonfav,
     title: "Clon de Netflix",
