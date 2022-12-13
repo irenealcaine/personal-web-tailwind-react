@@ -44,6 +44,7 @@ const Portfolio = () => {
             autoPlaySpeed={2500}
             customTransition="all 1.5s"
             transitionDuration={1500}
+          // disableSlideInfo={false}
           >
 
             {

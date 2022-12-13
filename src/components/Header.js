@@ -20,7 +20,7 @@ const Header = () => {
           alt=""
           onClick={() => { setOpen(!open) }}
         />
-        <div className={`${open ? '' : 'hidden'} md:flex md:w-1/2 md:justify-end text-xl`}>
+        <div className={`${open ? '' : 'hidden'} md:flex md:w-2/3 md:justify-end text-xl`}>
           <div className={`flex flex-col md:flex-row md:items-center pr-7 md:mt-0 mt-2`}>
 
             <a href="#portfolio" className='px-2 hover:underline'>Proyectos</a>
@@ -28,9 +28,9 @@ const Header = () => {
           </div>
           <div className='md:flex md:items-center'>
             <div className='flex items-center mx-2 md:mt-0 mt-2'>
-              <a href="https://www.github.com/irenealcaine" target={'_blank'} rel="noreferrer"><img src={github} alt="" className='h-8 hover:filter hover:invert  transition-all duration-500 ease-in-out' /></a>
-              <a href="https://www.linkedin.com/in/irenealcaine/" target={'_blank'} rel="noreferrer"><img src={linkedin} alt="" className='h-8 mx-2 hover:filter hover:invert transition-all duration-500 ease-in-out' /></a>
-              <a href="https://www.codepen.io/ialcaine" target={'_blank'} rel="noreferrer"><img src={codepen} alt="" className='h-8 hover:filter hover:invert transition-all duration-500 ease-in-out' /></a>
+              <a href="https://www.github.com/irenealcaine" target={'_blank'} rel="noreferrer"><img src={github} alt="" className='h-8 w-8 hover:filter hover:invert  transition-all duration-500 ease-in-out' /></a>
+              <a href="https://www.linkedin.com/in/irenealcaine/" target={'_blank'} rel="noreferrer"><img src={linkedin} alt="" className='h-8 w-8 mx-2 hover:filter hover:invert transition-all duration-500 ease-in-out' /></a>
+              {/* <a href="https://www.codepen.io/ialcaine" target={'_blank'} rel="noreferrer"><img src={codepen} alt="" className='h-8 hover:filter hover:invert transition-all duration-500 ease-in-out' /></a> */}
             </div>
             <a href="#contact"><button className='bg-white text-violet-900 font-bold border-2 border-violet-900 rounded py-1 px-6 mx-2 hover:bg-violet-900 hover:text-white hover:border-white md:mt-0 mt-4  transition-all duration-500 ease-in-out'>Charlemos</button></a>
           </div>
