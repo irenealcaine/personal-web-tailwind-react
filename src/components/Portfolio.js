@@ -41,7 +41,7 @@ const Portfolio = () => {
             ssr={true}
             infinite={true}
             autoPlay={true}
-            autoPlaySpeed={2500}
+            autoPlaySpeed={2800}
             customTransition="all 1.5s"
             transitionDuration={1500}
           // disableSlideInfo={false}
@@ -51,7 +51,7 @@ const Portfolio = () => {
               portfolioData.map((data, key) => {
                 return (
 
-                  <div key={key} className="p-4 group">
+                  <div key={key} className="py-4 md:px-8 group">
                     <a href={data.url} target={'_blank'} rel="noreferrer">
                       <p className='text-start md:text-xl group-hover:underline decoration-violet-600'>{data.title}</p>
                       <img src={data.favicon} alt='img' className='w-12 md:w-16 absolute rounded bg-violet-700/40 p-1 border-violet-700 border-2 z-50 group-hover:scale-75 transition-all duration-500 ease-in-out' />

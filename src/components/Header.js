@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react'
 import github from '../images/github.png'
 import linkedin from '../images/linkedin.png'
-import codepen from '../images/codepen.jpg'
 import openMenu from '../images/menu.png'
 import closeMenu from '../images/close.png'
 
