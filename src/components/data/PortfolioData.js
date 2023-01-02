@@ -5,6 +5,7 @@ import weatherApp from '../../images/weatherApp.png'
 import crypto from '../../images/crypto.png'
 import spotyclon from '../../images/spotyclon.png'
 import netfliclon from '../../images/netfliclon.png'
+import minimal from '../../images/minimal.png'
 
 import amigariafav from '../../images/amigariafav.svg'
 import apvfav from '../../images/APVfav2.png'
@@ -13,6 +14,7 @@ import sunfav from '../../images/sunfav2.png'
 import coinfav from '../../images/coinfav2.png'
 import melodyfav from '../../images/melodyfav2.png'
 import netfliclonfav from '../../images/netfliclonfav.jpg'
+import IAfav from '../../images/IAfav.png'
 
 import react from '../../images/react.png'
 import tailwind from '../../images/tailwind.png'
@@ -50,6 +52,15 @@ export const portfolioData = [
       express,
       react,
       nodejs
+    ]
+  }, {
+    url: "https://tiny-basbousa-a815bc.netlify.app",
+    github: "https://github.com/irenealcaine/portfolio-minimalist",
+    img: minimal,
+    favicon: IAfav,
+    title: "Portfolio minimalista",
+    icons: [
+      js
     ]
   }, {
     url: "https://melodic-pony-2cdb8b.netlify.app",
