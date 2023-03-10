@@ -6,6 +6,7 @@ import crypto from '../../images/crypto.png'
 import spotyclon from '../../images/spotyclon.png'
 import netfliclon from '../../images/netfliclon.png'
 import minimal from '../../images/minimal.png'
+import mascotas from '../../images/mascotas.png'
 
 import amigariafav from '../../images/amigariafav.svg'
 import apvfav from '../../images/APVfav2.png'
@@ -15,6 +16,7 @@ import coinfav from '../../images/coinfav2.png'
 import melodyfav from '../../images/melodyfav2.png'
 import netfliclonfav from '../../images/netfliclonfav.jpg'
 import IAfav from '../../images/IAfav.png'
+import mascotasfav from '../../images/mascotasfav.png'
 
 import react from '../../images/react.png'
 import tailwind from '../../images/tailwind.png'
@@ -40,6 +42,15 @@ export const portfolioData = [
       vue,
       sass,
       firebase
+    ]
+  }, {
+    url: "https://www.canguromascotas.com",
+    github: "https://github.com/irenealcaine/cangurodemascotas",
+    img: mascotas,
+    favicon: mascotasfav,
+    title: "Web de guarderia y paseos de mascotas",
+    icons: [
+      react, tailwind
     ]
   }, {
     url: "https://golden-melba-970593.netlify.app",
