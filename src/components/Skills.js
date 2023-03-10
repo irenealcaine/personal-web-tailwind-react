@@ -1,4 +1,4 @@
-import CV from '../cv/CV_SEPT.pdf'
+import CV from '../cv/CV_Irene_Alcaine_FEB.pdf'
 import React from 'react'
 
 import { skillsData } from './data/SkillsData'
