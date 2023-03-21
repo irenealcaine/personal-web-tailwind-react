@@ -9,10 +9,22 @@ module.exports = {
         'caveat': ['Caveat', 'sans-serif'],
       },
       animation: {
+        up: "up 5s ease-in-out infinite",
         blob: "blob 7s infinite",
         wiggle: 'wiggle 0.3s ease-in-out infinite',
       },
       keyframes: {
+        up: {
+          "0%": {
+            transform: "translateY(15vh) scale(0.5) rotate(0deg)"
+          },
+          "20%": {
+            transform: "translateY(5vh) scale(1) rotate(0deg)"
+          },
+          "100%": {
+            transform: "translateY(-100vh) scale(0) rotate(360deg)"
+          }
+        },
         blob: {
           "0%": {
             transform: "translate(0px, 0px) scale(1)"
@@ -37,6 +49,7 @@ module.exports = {
           '0%, 100%': { transform: 'rotate(-3deg)' },
           '50%': { transform: 'rotate(3deg)' },
         }
+
       }
     },
   },

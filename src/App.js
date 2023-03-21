@@ -9,7 +9,7 @@ import Skills from './components/Skills';
 
 function App() {
   return (
-    <div className="bg-zinc-900 text-white scroll-smooth">
+    <div className="bg-[#121217] text-white scroll-smooth">
 
       <Home />
 
