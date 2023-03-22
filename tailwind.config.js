@@ -9,17 +9,17 @@ module.exports = {
         'caveat': ['Caveat', 'sans-serif'],
       },
       animation: {
-        up: "up 5s ease-in-out infinite",
+        up: "up 4s ease-in-out infinite",
         blob: "blob 7s infinite",
         wiggle: 'wiggle 0.3s ease-in-out infinite',
       },
       keyframes: {
         up: {
           "0%": {
-            transform: "translateY(15vh) scale(0.5) rotate(0deg)"
+            transform: "translateY(0vh) scale(0.5) rotate(0deg)"
           },
           "20%": {
-            transform: "translateY(5vh) scale(1) rotate(0deg)"
+            transform: "translateY(-5vh) scale(1) rotate(0deg)"
           },
           "100%": {
             transform: "translateY(-100vh) scale(0) rotate(360deg)"
