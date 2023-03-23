@@ -51,14 +51,24 @@ const Contact = () => {
           <div className="md:w-2/5">
             <p className="text-center text-xl my-2">¿En qué puedo ayudarte?</p>
             <div className="flex flex-col px-4 md:px-0 py-4 items-center justify-center">
-              <div className="mx-3 p-1">
+              <a
+                href="mailto:irenealcainealvarez@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                className="mx-3 p-1"
+              >
                 <img src={mail} alt="" className="h-6 inline-block " />{" "}
                 irenealcainealvarez@gmail.com
-              </div>
-              <div className="mx-3 p-1">
-                <img src={phone} alt="" className="h-6 inline-block" /> +34 629
-                88 21 29
-              </div>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=346298821291&text=Hola, ¡charlemos!"
+                target="_blank"
+                className="mx-3 p-1"
+                rel="noreferrer"
+              >
+                <img src={phone} alt="" className="h-6 inline-block" />
+                +34 629 88 21 29
+              </a>
             </div>
           </div>
 
