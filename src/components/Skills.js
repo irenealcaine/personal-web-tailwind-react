@@ -19,7 +19,7 @@ const Skills = () => {
         <div className="my-auto ">
           <div className="flex flex-col md:flex-row w-5/6 mx-auto ">
             <Tabs
-              selectedTabClassName="bg-violet-700 font-bold"
+              selectedTabClassName="bg-[linear-gradient(90deg,_#7e22ce88_70%,_#be185daa_90%)] opacity-80 font-bold"
               className="md:w-1/3 mr-0 md:mr-8"
             >
               <TabList className="flex flex-wrap justify-center flex-col md:flex-row bg-violet-900 p-2 rounded-lg gap-2 mx-auto bg-opacity-60">
@@ -35,7 +35,7 @@ const Skills = () => {
               {skillsData.map((data, key) => {
                 return (
                   <TabPanel>
-                    <div className="flex flex-wrap justify-center border-2 border-violet-900 rounded-xl p-1 mx-auto mt-2">
+                    <div className="flex flex-wrap justify-center border-2 border-violet-700 rounded-xl p-1 mx-auto mt-2">
                       {data.icons.map((s) => (
                         <img src={s} alt="" className="md:h-16 h-10 m-3" />
                       ))}
@@ -46,7 +46,7 @@ const Skills = () => {
             </Tabs>
 
             <Tabs
-              selectedTabClassName="bg-violet-700 font-bold"
+              selectedTabClassName="bg-[linear-gradient(90deg,_#7e22ce88_70%,_#be185daa_90%)] opacity-80 font-bold"
               className="md:w-2/3"
             >
               <TabList className="flex justify-center flex-col md:flex-row bg-violet-900 p-2 rounded-lg gap-2 mt-4 md:mt-0 mx-auto bg-opacity-60">
@@ -59,7 +59,7 @@ const Skills = () => {
               </TabList>
 
               <TabPanel>
-                <div className="border-2 border-violet-900 rounded-xl mx-auto mt-2 px-4 py-2">
+                <div className="border-2 border-violet-700 rounded-xl mx-auto mt-2 px-4 py-2">
                   {educationData.map((data, key) => {
                     return (
                       <ul key={key}>
