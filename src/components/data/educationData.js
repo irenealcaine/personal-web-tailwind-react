@@ -1,10 +1,10 @@
 export const educationData = [
   {
     title: "Confección y publicación de páginas web",
-    ubication: "Casinos, Valencia",
+    ubication: "Ayuntamiento de Casinos, Valencia",
     duration: "Dic 2022 - Dic 2023",
     content: [
-      "Proyectos en equipo según las necesidades del ayuntamiento, desarrollandowebs nuevas y manteniendo y mejorando algunas ya existentes.",
+      "Proyectos en equipo según las necesidades del ayuntamiento, desarrollando webs nuevas y manteniendo y mejorando algunas ya existentes.",
       "Formación subvencionada por el fondo europeo",
     ],
   },
