@@ -64,20 +64,20 @@ const Skills = () => {
                     return (
                       <ul key={key}>
                         <li className="mb-4">
-                          <h4 className="font-bold text-lg">
+                          <h4 className="font-bold text-lg md:text-xl">
                             <span className="font-bold text-3xl text-violet-600">
                               -
                             </span>{" "}
                             {data.title}
                           </h4>
-                          <p>
+                          <p className="md:text-lg">
                             <span className="italic text-violet-300">
                               {data.ubication}
                             </span>{" "}
                             | {data.duration}
                           </p>
 
-                          <ul className="indent-4 text-justify mt-2">
+                          <ul className="indent-4 text-justify mt-2 text-sm md:text-base">
                             <li>
                               {data.content.map((s) => (
                                 <p>{s}</p>
@@ -96,20 +96,20 @@ const Skills = () => {
                     return (
                       <ul key={key}>
                         <li className="mb-4">
-                          <h4 className="font-bold text-lg">
+                          <h4 className="font-bold text-lg md:text-xl">
                             <span className="font-bold text-3xl text-violet-600">
                               -
                             </span>{" "}
                             {data.title}
                           </h4>
-                          <p>
+                          <p className="md:text-lg">
                             <span className="italic text-violet-300">
                               {data.ubication}
                             </span>{" "}
                             | {data.duration}
                           </p>
 
-                          <ul className="indent-4 text-justify mt-2">
+                          <ul className="indent-4 text-justify mt-2 text-sm md:text-base">
                             <li>
                               {data.content.map((s) => (
                                 <p>{s}</p>
