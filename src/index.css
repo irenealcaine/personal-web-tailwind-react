@@ -6,66 +6,78 @@ html {
 @tailwind utilities;
 
 @layer utilities {
-  .animation-delay-250{
-    animation-delay: .25s;
+  .animation-delay-250 {
+    animation-delay: 0.25s;
   }
-  .animation-delay-500{
-    animation-delay: .5s;
+  .animation-delay-500 {
+    animation-delay: 0.5s;
   }
-  .animation-delay-750{
-    animation-delay: .75s;
+  .animation-delay-750 {
+    animation-delay: 0.75s;
   }
-  .animation-delay-1000{
+  .animation-delay-1000 {
     animation-delay: 1s;
   }
-  .animation-delay-1250{
+  .animation-delay-1250 {
     animation-delay: 1.25s;
   }
-  .animation-delay-1500{
+  .animation-delay-1500 {
     animation-delay: 1.5s;
   }
-  .animation-delay-1750{
+  .animation-delay-1750 {
     animation-delay: 1.75s;
   }
-  .animation-delay-2000{
+  .animation-delay-2000 {
     animation-delay: 2s;
   }
-  .animation-delay-2250{
+  .animation-delay-2250 {
     animation-delay: 2.25s;
   }
-  .animation-delay-2500{
+  .animation-delay-2500 {
     animation-delay: 2.5s;
   }
-  .animation-delay-2750{
+  .animation-delay-2750 {
     animation-delay: 2.75s;
   }
-  .animation-delay-3000{
+  .animation-delay-3000 {
     animation-delay: 3s;
   }
-  .animation-delay-3250{
+  .animation-delay-3250 {
     animation-delay: 3.25s;
   }
-  .animation-delay-3500{
+  .animation-delay-3500 {
     animation-delay: 3.5s;
   }
-  .animation-delay-3750{
+  .animation-delay-3750 {
     animation-delay: 3.75s;
   }
-  .animation-delay-4000{
+  .animation-delay-4000 {
     animation-delay: 4s;
   }
 }
 
 @font-face {
-  font-family: 'Caveat';
+  font-family: "Caveat";
   src: url(./fonts/Caveat-Regular.ttf);
   src: url(./fonts/Caveat-Bold.ttf);
   src: url(./fonts/Caveat-Medium.ttf);
   src: url(./fonts/Caveat-SemiBold.ttf);
 }
 
-h1:hover{
-  color:#f3e8ff;
-  text-shadow:0 0 1rem #a78bfa, 0 0 2rem #8b5cf6;
-  transform: translateY(-.5rem);
+h1:hover {
+  color: #f3e8ff;
+  text-shadow: 0 0 1rem #a78bfa, 0 0 2rem #8b5cf6;
+  transform: translateY(-0.5rem);
+}
+
+h2 span {
+  background: linear-gradient(to right, #6d28d9, #be185d);
+  background-size: 100% 0.2em;
+  background-position: 0 70%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  padding-right: 0.75rem;
+}
+h2:hover span {
+  background-size: 100% 90%;
 }
