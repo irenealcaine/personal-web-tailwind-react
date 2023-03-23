@@ -9,7 +9,13 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="bg-gradient-to-l from-violet-600 via-violet-900 to-violet-900 shadow-lg py-4 px-7 md:flex md:justify-between sticky top-0 z-50 font-caveat">
+      <div
+        className={`${
+          open
+            ? "bg-gradient-to-l from-violet-600 via-violet-900 to-violet-900"
+            : "bg-[linear-gradient(90deg,_#7e22ce_65%,_#be185d_85%)]"
+        } shadow-lg py-4 px-7 md:flex md:justify-between sticky top-0 z-50 font-caveat`}
+      >
         <a href="#home" className="text-3xl ">
           Irene
         </a>
