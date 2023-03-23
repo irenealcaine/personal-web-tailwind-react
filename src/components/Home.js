@@ -36,7 +36,7 @@ const Home = () => {
         <div className="absolute -bottom-10 bg-pink-700 opacity-70 right-[42.5%] w-4 h-4 rounded-full animate-up animation-delay-2750"></div>
         <div className="absolute -bottom-10 bg-violet-700 opacity-50 right-[15%] w-4 h-4 rounded-full animate-up animation-delay-3000"></div>
         <div className="absolute -bottom-10 bg-pink-700 opacity-30 right-[07.5%] w-4 h-4 rounded-full animate-up animation-delay-3250"></div>
-        <div className="absolute -bottom-10 bg-violet-700 opacity-30 right-[15%] w-4 h-4 rounded-full animate-up animation-delay-3500"></div>
+        <div className="absolute -bottom-10 bg-violet-700 opacity-30 right-[35%] w-4 h-4 rounded-full animate-up animation-delay-3500"></div>
         <div className="absolute -bottom-10 bg-pink-700 opacity-50 right-[27.5%] w-4 h-4 rounded-full animate-up animation-delay-3750"></div>
         <div className="absolute -bottom-10 bg-violet-700 opacity-70 right-[30%] w-6 h-6 rounded-full animate-up animation-delay-4000"></div>
 

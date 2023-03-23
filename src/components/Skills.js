@@ -17,15 +17,15 @@ const Skills = () => {
         </h2>
 
         <div className="my-auto ">
-          <div className="flex flex-col md:flex-row w-5/6 mx-auto">
+          <div className="flex flex-col md:flex-row w-5/6 mx-auto ">
             <Tabs
               selectedTabClassName="bg-violet-700 font-bold"
               className="md:w-1/3 mr-0 md:mr-8"
             >
-              <TabList className="flex flex-wrap justify-center flex-col md:flex-row bg-violet-900 p-2 rounded-lg  mx-auto bg-opacity-60">
+              <TabList className="flex flex-wrap justify-center flex-col md:flex-row bg-violet-900 p-2 rounded-lg gap-2 mx-auto bg-opacity-60">
                 {skillsData.map((data, key) => {
                   return (
-                    <Tab className="rounded-lg py-2 px-4 mx-2 hover:bg-violet-800 hover:cursor-pointer transition-all duration-500 ease-in-out">
+                    <Tab className="rounded-lg py-2 px-4 hover:bg-violet-800 hover:cursor-pointer transition-all duration-500 ease-in-out">
                       <h3 className="md:text-xl">{data.title}</h3>
                     </Tab>
                   );
@@ -49,11 +49,11 @@ const Skills = () => {
               selectedTabClassName="bg-violet-700 font-bold"
               className="md:w-2/3"
             >
-              <TabList className="flex justify-center flex-col md:flex-row bg-violet-900 p-2 rounded-lg mt-4 md:mt-0 mx-auto bg-opacity-60">
-                <Tab className="rounded-lg py-2 px-4 mx-2 hover:bg-violet-800 hover:cursor-pointer transition-all duration-500 ease-in-out">
+              <TabList className="flex justify-center flex-col md:flex-row bg-violet-900 p-2 rounded-lg gap-2 mt-4 md:mt-0 mx-auto bg-opacity-60">
+                <Tab className="rounded-lg py-2 px-4  hover:bg-violet-800 hover:cursor-pointer transition-all duration-500 ease-in-out">
                   <h3 className="md:text-xl">Formación</h3>
                 </Tab>
-                <Tab className="rounded-lg py-2 px-4 mx-2 hover:bg-violet-800 hover:cursor-pointer transition-all duration-500 ease-in-out">
+                <Tab className="rounded-lg py-2 px-4  hover:bg-violet-800 hover:cursor-pointer transition-all duration-500 ease-in-out">
                   <h3 className="md:text-xl">Experiencia</h3>
                 </Tab>
               </TabList>
