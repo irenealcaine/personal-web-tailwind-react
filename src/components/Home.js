@@ -12,6 +12,7 @@ const Home = () => {
     setTitleColor(randomColor);
     console.log(titleColor);
     console.log(randomColor);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const color = new TailwindColor().pick()
