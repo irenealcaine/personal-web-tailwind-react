@@ -33,8 +33,8 @@ import firebase from '../../images/firebase.png'
 export const portfolioData = [
 
   {
-    url: "https://www.amigaria.com",
-    github: "https://github.com/AmigariaWeb",
+    url: "https://app.amigaria.com/login",
+    github: "https://github.com/AmigariaWeb/web-app",
     img: amigaria,
     favicon: amigariafav,
     title: "Web 100% accesible de integración social",
