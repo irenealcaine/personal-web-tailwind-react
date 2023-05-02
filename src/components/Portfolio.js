@@ -10,7 +10,11 @@ const Portfolio = () => {
           <span>Proyectos</span>
         </h2>
         <div className="w-11/12 mx-auto flex flex-wrap gap-4 justify-center">
-          <p className=" p-8 w-full sm:w-5/12 md:w-3/12">holas</p>
+          <div className=" p-8 w-full sm:w-5/12 md:w-3/12">
+            <p className="text-center border rounded-lg font-bold p-1 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out px-4 py-2">
+              Ver todos
+            </p>
+          </div>
           {portfolioData.slice(0, 5).map((data, key) => {
             return (
               <div
