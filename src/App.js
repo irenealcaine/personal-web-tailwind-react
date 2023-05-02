@@ -1,26 +1,17 @@
-import './App.css';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Home from './components/Home';
-import Portfolio from './components/Portfolio';
-import Skills from './components/Skills';
-// import Carousel from './components/Carousel';
+import "./App.css";
+import Home from "./components/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import PortfolioDetails from "./pages/PortfolioDetails";
 
 function App() {
   return (
     <div className="bg-[#121217] text-white scroll-smooth">
-
-      <Home />
-
-      <div>
-        <Header />
-        <Portfolio />
-        <Skills />
-        <Contact />
-        <Footer />
-      </div>
-
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/portfolio" element={<PortfolioDetails />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

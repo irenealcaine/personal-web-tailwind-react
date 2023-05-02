@@ -1,4 +1,9 @@
 import arrowDown from "../images/arrowdown.gif";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Portfolio from "../components/Portfolio";
+import Skills from "../components/Skills";
 
 const Home = () => {
   return (
@@ -45,9 +50,16 @@ const Home = () => {
         <div className="absolute -bottom-10 bg-pink-700 opacity-50 right-[27.5%] w-6 h-6 rounded-full animate-up animation-delay-3750"></div>
         <div className="absolute -bottom-10 bg-violet-700 opacity-30 right-[30%] w-10 h-10 rounded-full animate-up animation-delay-4000"></div>
 
-        <a href="#portfolio" className="absolute bottom-2 right-3">
+        <a href="#portfolio" className="absolute bottom-12 right-3">
           <img src={arrowDown} alt="" className="w-40" />
         </a>
+      </div>
+      <div>
+        <Header />
+        <Portfolio />
+        <Skills />
+        <Contact />
+        <Footer />
       </div>
     </>
   );

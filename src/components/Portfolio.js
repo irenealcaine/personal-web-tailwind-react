@@ -9,7 +9,7 @@ const Portfolio = () => {
         <h2 className="pt-20 text-center text-6xl md:text-8xl text-white font-caveat mb-8">
           <span>Proyectos</span>
         </h2>
-        <div className="w-11/12 mx-auto flex flex-wrap gap-4 justify-center">
+        <div className="w-10/12 mx-auto flex flex-wrap gap-4 justify-center">
           <div className=" p-8 w-full sm:w-5/12 md:w-3/12">
             <p className="text-center border rounded-lg font-bold p-1 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out px-4 py-2">
               Ver todos
