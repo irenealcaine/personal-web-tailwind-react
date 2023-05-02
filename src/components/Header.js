@@ -16,7 +16,7 @@ const Header = () => {
             : "bg-[linear-gradient(90deg,_#7e22ce_70%,_#be185d_90%)]"
         } shadow-lg py-4 px-7 md:flex md:justify-between sticky top-0 z-50 font-caveat transition-all duration-500 ease-in-out`}
       >
-        <a href="#home" className="text-3xl ">
+        <a href="/#home" className="text-3xl ">
           Irene
         </a>
         <img
@@ -36,7 +36,7 @@ const Header = () => {
             className={`flex flex-col md:flex-row md:items-center pr-7 md:mt-0 mt-2`}
           >
             <a
-              href="#portfolio"
+              href="/#portfolio"
               className="px-2 hover:underline"
               onClick={() => {
                 setOpen(!open);
@@ -45,7 +45,7 @@ const Header = () => {
               Proyectos
             </a>
             <a
-              href="#skills"
+              href="/#skills"
               className="px-2 hover:underline"
               onClick={() => {
                 setOpen(!open);

@@ -2,12 +2,24 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { portfolioData } from "../components/data/PortfolioData";
+import { Link } from "react-router-dom";
 
 const PortfolioDetails = () => {
   return (
     <>
       <Header />
-      Volver
+
+      <div className="w-11/12 mx-auto md:w-8/12 pb-8">
+        <h1 className="text-center text-8xl md:text-9xl w-7/10 pb-8 px-4 md:ml-12 font-caveat text-violet-600 transition-all duration-500 ease-in-out">
+          Proyectos
+        </h1>
+        <Link
+          to="/"
+          className="text-center border rounded-lg font-bold p-1 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out px-4 py-2"
+        >
+          Atrás
+        </Link>
+      </div>
       <div className="w-10/12 mx-auto flex flex-wrap gap-4 justify-center">
         {portfolioData.map((data, key) => {
           return (
