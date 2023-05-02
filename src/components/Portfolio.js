@@ -10,7 +10,8 @@ const Portfolio = () => {
           <span>Proyectos</span>
         </h2>
         <div className="w-11/12 mx-auto flex flex-wrap gap-4 justify-center">
-          {portfolioData.map((data, key) => {
+          <p className=" p-8 w-full sm:w-5/12 md:w-3/12">holas</p>
+          {portfolioData.slice(0, 5).map((data, key) => {
             return (
               <div
                 key={key}
