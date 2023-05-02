@@ -1,31 +1,8 @@
 import React from "react";
-
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
 import { portfolioData } from "./data/PortfolioData.js";
-import github from "../images/github.png";
 
 const Portfolio = () => {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 4,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 640 },
-      items: 1,
-    },
-    mobile: {
-      breakpoint: { max: 640, min: 0 },
-      items: 1,
-    },
-  };
-
   return (
     <>
       <div className="md:min-h-screen flex flex-col" id="portfolio">
@@ -43,14 +20,23 @@ const Portfolio = () => {
                 <img
                   src={data.favicon}
                   alt=""
-                  className="w-full group-hover:scale-125 transition-all duration-500 "
+                  className="w-full group-hover:scale-150 transition-all duration-500 "
                 />
-                <p className="p-6 absolute -bottom-full left-1 group-hover:bottom-24 transition-all duration-500 z-50">
+                <p className="font-caveat text-2xl p-6 absolute -top-full left-1 group-hover:top-0 transition-all duration-500 z-50">
                   {data.title}
                 </p>
-                <p className="p-4 absolute -bottom-full left-1 group-hover:bottom-12 transition-all duration-500 z-50">
-                  {data.title}
-                </p>
+                <div className="p-4 text-right absolute -bottom-full right-1 group-hover:bottom-0 transition-all duration-500 z-50">
+                  {data.description}
+                  <div className="flex justify-end gap-1">
+                    {data.icons.map((icon) => (
+                      <img
+                        src={icon}
+                        alt="icono"
+                        className="h-8 md:h-12 md:p-2 p-1 transition-all duration-500 ease-in-out border border-purple-500 rounded-lg"
+                      />
+                    ))}
+                  </div>
+                </div>
               </div>
             );
           })}
