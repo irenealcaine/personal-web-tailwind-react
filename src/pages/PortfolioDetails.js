@@ -9,23 +9,29 @@ import tailwind from "../images/tailwind.png";
 import vue from "../images/vue.png";
 import mongo from "../images/mongo.svg";
 import { useState } from "react";
-// import nodejs from "../images/nodejs.png";
-// import sass from "../images/sass.png";
-// import express from "../images/express.png";
-// import js from "../images/js.png";
-// import mui from "../images/mui.png";
-// import firebase from "../images/firebase.png";
+import nodejs from "../images/nodejs.png";
+import sass from "../images/sass.png";
+import express from "../images/express.png";
+import js from "../images/js.png";
+import mui from "../images/mui.png";
+import firebase from "../images/firebase.png";
 
 const filterOptions = [
-  { icon: "Todos", value: "all" },
-  { icon: react, value: "react" },
-  { icon: tailwind, value: "tailwind" },
-  { icon: vue, value: "vue" },
-  { icon: mongo, value: "mongo" },
+  { text: "Todos", value: "all" },
+  { icon: react, value: react },
+  { icon: tailwind, value: tailwind },
+  { icon: vue, value: vue },
+  { icon: mongo, value: mongo },
+  { icon: sass, value: sass },
+  { icon: nodejs, value: nodejs },
+  { icon: express, value: express },
+  { icon: js, value: js },
+  { icon: mui, value: mui },
+  { icon: firebase, value: firebase },
 ];
 
 const PortfolioDetails = () => {
-  const [filter, setFilter] = useState("");
+  const [filter, setFilter] = useState("all");
 
   return (
     <>
@@ -44,53 +50,69 @@ const PortfolioDetails = () => {
       </div>
       <div className="flex flex-wrap w-10/12 mx-auto justify-center items-center gap-2 p-8">
         {filterOptions.map((option) => {
-          return (
+          return option.icon ? (
             <img
               src={option.icon}
               alt="icono"
-              className="h-12 border border-transparent p-2 hover:border-purple-700 hover:bg-purple-700/40 rounded-lg transition-all duration-500 cursor-pointer"
+              className={`${
+                filter === option.value ? "bg-purple-700/50" : ""
+              } h-9 md:h-16 border border-transparent p-1 md:p-2 hover:border-purple-700 hover:bg-purple-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
               onClick={() => {
                 setFilter(option.value);
               }}
             />
+          ) : (
+            <p
+              className={`${
+                filter === option.value ? "bg-purple-700/50" : ""
+              } md:text-xl py-2 px-4 border border-transparent p-2 hover:border-purple-700 hover:bg-purple-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
+              onClick={() => {
+                setFilter(option.value);
+              }}
+            >
+              {option.text}
+            </p>
           );
         })}
-        <p>{filter}</p>
       </div>
       <div className="w-10/12 mx-auto flex flex-wrap gap-4 justify-center">
-        {portfolioData.map((data, key) => {
-          return (
-            <a
-              href={data.url}
-              target="_blank"
-              rel="noreferrer"
-              key={key}
-              className="w-full sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-purple-700 rounded-xl"
-            >
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-500"></div>
-              <img
-                src={data.favicon}
-                alt=""
-                className="w-full group-hover:scale-150 transition-all duration-500 "
-              />
-              <p className="font-caveat text-2xl p-6 absolute -top-full left-1 group-hover:top-0 transition-all duration-500 z-50">
-                {data.title}
-              </p>
-              <div className="p-4 text-right absolute -bottom-full right-1 group-hover:bottom-0 transition-all duration-500 z-50">
-                {data.description}
-                <div className="flex justify-end gap-1">
-                  {data.icons.map((icon) => (
-                    <img
-                      src={icon}
-                      alt="icono"
-                      className="h-8 md:h-12 md:p-2 p-1 transition-all duration-500 ease-in-out border border-purple-500 rounded-lg"
-                    />
-                  ))}
+        {portfolioData
+          .filter((tech) =>
+            filter === "all" ? tech : tech.icons.includes(filter)
+          )
+          .map((data, key) => {
+            return (
+              <a
+                href={data.url}
+                target="_blank"
+                rel="noreferrer"
+                key={key}
+                className="w-full sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-purple-700 rounded-xl"
+              >
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-500"></div>
+                <img
+                  src={data.favicon}
+                  alt=""
+                  className="w-full group-hover:scale-150 transition-all duration-500 "
+                />
+                <p className="font-caveat text-2xl p-6 absolute -top-full left-1 group-hover:top-0 transition-all duration-500 z-50">
+                  {data.title}
+                </p>
+                <div className="p-4 text-right absolute -bottom-full right-1 group-hover:bottom-0 transition-all duration-500 z-50">
+                  {data.description}
+                  <div className="flex justify-end gap-1">
+                    {data.icons.map((icon) => (
+                      <img
+                        src={icon}
+                        alt="icono"
+                        className="h-8 md:h-12 md:p-2 p-1 transition-all duration-500 ease-in-out border border-purple-500 rounded-lg"
+                      />
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </a>
-          );
-        })}
+              </a>
+            );
+          })}
       </div>
       <Contact />
       <Footer />
