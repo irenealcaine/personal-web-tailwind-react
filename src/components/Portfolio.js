@@ -17,7 +17,10 @@ const Portfolio = () => {
           </div>
           {portfolioData.slice(0, 5).map((data, key) => {
             return (
-              <div
+              <a
+                href={data.url}
+                target="_blank"
+                rel="noreferrer"
                 key={key}
                 className="w-full sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-purple-700 rounded-xl"
               >
@@ -42,7 +45,7 @@ const Portfolio = () => {
                     ))}
                   </div>
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>

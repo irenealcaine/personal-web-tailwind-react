@@ -11,7 +11,10 @@ const PortfolioDetails = () => {
       <div className="w-10/12 mx-auto flex flex-wrap gap-4 justify-center">
         {portfolioData.map((data, key) => {
           return (
-            <div
+            <a
+              href={data.url}
+              target="_blank"
+              rel="noreferrer"
               key={key}
               className="w-full sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-purple-700 rounded-xl"
             >
@@ -36,7 +39,7 @@ const PortfolioDetails = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </a>
           );
         })}
       </div>
