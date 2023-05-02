@@ -1,6 +1,7 @@
 import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import { portfolioData } from "./data/PortfolioData.js";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   return (
@@ -11,9 +12,12 @@ const Portfolio = () => {
         </h2>
         <div className="w-10/12 mx-auto flex flex-wrap gap-4 justify-center">
           <div className=" p-8 w-full sm:w-5/12 md:w-3/12">
-            <p className="text-center border rounded-lg font-bold p-1 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out px-4 py-2">
+            <Link
+              to="/portfolio"
+              className="text-center border rounded-lg font-bold p-1 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out px-4 py-2"
+            >
               Ver todos
-            </p>
+            </Link>
           </div>
           {portfolioData.slice(0, 5).map((data, key) => {
             return (
