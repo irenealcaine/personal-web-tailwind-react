@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Portfolio from "../components/Portfolio";
 import Skills from "../components/Skills";
+import Button from "./Button";
 
 const Home = () => {
   return (
@@ -55,6 +56,12 @@ const Home = () => {
         </a>
       </div>
       <div>
+        <Button
+          href="https://google.es"
+          text="hola"
+          style="primary"
+          className=""
+        />
         <Header />
         <Portfolio />
         <Skills />

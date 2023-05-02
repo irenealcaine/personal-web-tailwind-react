@@ -41,12 +41,12 @@ const PortfolioDetails = () => {
         <h1 className="text-center text-8xl md:text-9xl w-7/10 pb-8 px-4 md:ml-12 font-caveat text-violet-600 transition-all duration-500 ease-in-out">
           Proyectos
         </h1>
-        <Link
-          to="/"
+        <a
+          href="/"
           className="text-center border rounded-lg font-bold p-1 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out px-4 py-2"
         >
           Atrás
-        </Link>
+        </a>
       </div>
       <div className="flex flex-wrap w-10/12 mx-auto justify-center items-center gap-2 p-8">
         {filterOptions.map((option) => {
