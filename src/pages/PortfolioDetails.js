@@ -4,7 +4,29 @@ import Header from "../components/Header";
 import { portfolioData } from "../components/data/PortfolioData";
 import { Link } from "react-router-dom";
 
+import react from "../images/react.png";
+import tailwind from "../images/tailwind.png";
+import vue from "../images/vue.png";
+import mongo from "../images/mongo.svg";
+import { useState } from "react";
+// import nodejs from "../images/nodejs.png";
+// import sass from "../images/sass.png";
+// import express from "../images/express.png";
+// import js from "../images/js.png";
+// import mui from "../images/mui.png";
+// import firebase from "../images/firebase.png";
+
+const filterOptions = [
+  { icon: "Todos", value: "all" },
+  { icon: react, value: "react" },
+  { icon: tailwind, value: "tailwind" },
+  { icon: vue, value: "vue" },
+  { icon: mongo, value: "mongo" },
+];
+
 const PortfolioDetails = () => {
+  const [filter, setFilter] = useState("");
+
   return (
     <>
       <Header />
@@ -19,6 +41,21 @@ const PortfolioDetails = () => {
         >
           Atrás
         </Link>
+      </div>
+      <div className="flex flex-wrap w-10/12 mx-auto justify-center items-center gap-2 p-8">
+        {filterOptions.map((option) => {
+          return (
+            <img
+              src={option.icon}
+              alt="icono"
+              className="h-12 border border-transparent p-2 hover:border-purple-700 hover:bg-purple-700/40 rounded-lg transition-all duration-500 cursor-pointer"
+              onClick={() => {
+                setFilter(option.value);
+              }}
+            />
+          );
+        })}
+        <p>{filter}</p>
       </div>
       <div className="w-10/12 mx-auto flex flex-wrap gap-4 justify-center">
         {portfolioData.map((data, key) => {
