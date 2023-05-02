@@ -1,87 +1,57 @@
 import React from "react";
-
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
 import { portfolioData } from "./data/PortfolioData.js";
-import github from "../images/github.png";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 4,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 640 },
-      items: 1,
-    },
-    mobile: {
-      breakpoint: { max: 640, min: 0 },
-      items: 1,
-    },
-  };
-
   return (
     <>
       <div className="md:min-h-screen flex flex-col" id="portfolio">
         <h2 className="pt-20 text-center text-6xl md:text-8xl text-white font-caveat mb-8">
           <span>Proyectos</span>
         </h2>
-        <div className="md:mt-8 mt-4 w-11/12 mx-auto">
-          <Carousel
-            swipeable={true}
-            responsive={responsive}
-            ssr={true}
-            infinite={true}
-            autoPlay={true}
-            autoPlaySpeed={2800}
-            customTransition="all 1.5s"
-            transitionDuration={1500}
-            // disableSlideInfo={false}
-          >
-            {portfolioData.map((data, key) => {
-              return (
-                <div key={key} className="py-4 md:px-8 group">
-                  <a href={data.url} target={"_blank"} rel="noreferrer">
-                    <p className="text-start md:text-xl group-hover:underline decoration-violet-600">
-                      {data.title}
-                    </p>
-                    <img
-                      src={data.favicon}
-                      alt="img"
-                      className="w-12 md:w-16 absolute rounded bg-violet-700/40 p-1 border-violet-700 border-2 z-50 group-hover:scale-75 transition-all duration-500 ease-in-out"
-                    />
-                    <a href={data.github} target={"_blank"} rel="noreferrer">
+        <div className="w-10/12 mx-auto flex flex-wrap gap-4 justify-center">
+          <div className=" p-8 w-full sm:w-5/12 md:w-3/12">
+            <Link
+              to="/portfolio"
+              className="text-center border rounded-lg font-bold p-1 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out px-4 py-2"
+            >
+              Ver todos
+            </Link>
+          </div>
+          {portfolioData.slice(0, 5).map((data, key) => {
+            return (
+              <a
+                href={data.url}
+                target="_blank"
+                rel="noreferrer"
+                key={key}
+                className="w-full sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-purple-700 rounded-xl"
+              >
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-500"></div>
+                <img
+                  src={data.favicon}
+                  alt=""
+                  className="w-full group-hover:scale-150 transition-all duration-500 "
+                />
+                <p className="font-caveat text-2xl p-6 absolute -top-full left-1 group-hover:top-0 transition-all duration-500 z-50">
+                  {data.title}
+                </p>
+                <div className="p-4 text-right absolute -bottom-full right-1 group-hover:bottom-0 transition-all duration-500 z-50">
+                  {data.description}
+                  <div className="flex justify-end gap-1">
+                    {data.icons.map((icon) => (
                       <img
-                        src={github}
-                        alt="img"
-                        className="w-8 md:w-12 absolute rounded bottom-20 right-2 bg-violet-900/80 p-1 border-violet-700 border-2 z-50 transition-all duration-500 ease-in-out"
+                        src={icon}
+                        alt="icono"
+                        className="h-8 md:h-12 md:p-2 p-1 transition-all duration-500 ease-in-out border border-purple-500 rounded-lg"
                       />
-                    </a>
-                    <img
-                      src={data.img}
-                      alt=""
-                      className=" mx-auto my-2 shadow-lg rounded-md group-hover:scale-105 cursor-pointer transition-all duration-500 ease-in-out"
-                    />
-                    <div className="flex justify-center mt-2">
-                      {data.icons.map((s) => (
-                        <img
-                          src={s}
-                          alt=""
-                          className="h-6 md:h-10 md:px-2 px-1 group-hover:scale-75 transition-all duration-500 ease-in-out"
-                        />
-                      ))}
-                    </div>
-                  </a>
+                    ))}
+                  </div>
                 </div>
-              );
-            })}
-          </Carousel>
+              </a>
+            );
+          })}
         </div>
       </div>
     </>

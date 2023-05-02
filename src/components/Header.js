@@ -16,7 +16,7 @@ const Header = () => {
             : "bg-[linear-gradient(90deg,_#7e22ce_70%,_#be185d_90%)]"
         } shadow-lg py-4 px-7 md:flex md:justify-between sticky top-0 z-50 font-caveat transition-all duration-500 ease-in-out`}
       >
-        <a href="#home" className="text-3xl ">
+        <a href="/#home" className="text-3xl ">
           Irene
         </a>
         <img
@@ -35,10 +35,22 @@ const Header = () => {
           <div
             className={`flex flex-col md:flex-row md:items-center pr-7 md:mt-0 mt-2`}
           >
-            <a href="#portfolio" className="px-2 hover:underline">
+            <a
+              href="/#portfolio"
+              className="px-2 hover:underline"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
               Proyectos
             </a>
-            <a href="#skills" className="px-2 hover:underline">
+            <a
+              href="/#skills"
+              className="px-2 hover:underline"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
               Habilidades
             </a>
           </div>
@@ -68,7 +80,12 @@ const Header = () => {
               </a>
             </div>
             <a href="#contact">
-              <button className="bg-white text-violet-900 font-bold border-2 border-violet-900 rounded py-1 px-6 mx-2 hover:bg-violet-900 hover:text-white hover:border-white md:mt-0 mt-4  transition-all duration-500 ease-in-out">
+              <button
+                className="bg-white text-violet-900 font-bold border-2 border-violet-900 rounded py-1 px-6 mx-2 hover:bg-violet-900 hover:text-white hover:border-white md:mt-0 mt-4  transition-all duration-500 ease-in-out"
+                onClick={() => {
+                  setOpen(!open);
+                }}
+              >
                 Charlemos
               </button>
             </a>
