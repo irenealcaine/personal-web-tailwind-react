@@ -1,7 +1,5 @@
 import React from "react";
 import { useState } from "react";
-// import github from "../images/github.png";
-// import linkedin from "../images/linkedin.png";
 import openMenu from "../images/menu.png";
 import closeMenu from "../images/close.png";
 import Button from "./Button";
@@ -62,11 +60,6 @@ const Header = () => {
                 rel="noreferrer"
                 className="text-3xl"
               >
-                {/* <img
-                  src={github}
-                  alt=""
-                  className="h-8 w-8 hover:filter hover:invert  transition-all duration-500 ease-in-out"
-                /> */}
                 <UseAnimations
                   animation={github}
                   strokeColor="#fff"
@@ -78,11 +71,6 @@ const Header = () => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                {/* <img
-                  src={linkedin}
-                  alt=""
-                  className="h-8 w-8 mx-2 hover:filter hover:invert transition-all duration-500 ease-in-out"
-                /> */}
                 <UseAnimations
                   animation={linkedin}
                   strokeColor="#fff"
