@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { portfolioData } from "../components/data/PortfolioData";
 
-const ProjectDetails = ({ id }) => {
+const ProjectDetails = () => {
   //   const { id } = useParams();
   //   portfolioData = portfolioData.id === id;
 
@@ -22,11 +22,14 @@ const ProjectDetails = ({ id }) => {
 
   //   const project = projects.find((p) => p.id === id);
 
+  const { id } = useParams();
+
+  const project = portfolioData.find((project) => project.id === id);
   return (
     <div>
       <Header />
 
-      {/* <p>{project.title}</p> */}
+      <p>{project.title}</p>
       <Contact />
       <Footer />
     </div>
