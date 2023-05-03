@@ -10,7 +10,7 @@ const Button = ({ href, text, style, className }) => {
   return (
     <a
       href={href}
-      className={`${styles} font-caveat text-xl px-5 py-1 rounded-lg border-2 transition-all duration-500 ${className}`}
+      className={`${styles} inline-block font-caveat text-xl px-6 py-1 rounded-lg border-2 transition-all duration-500 ${className}`}
     >
       {text}
     </a>

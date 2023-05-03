@@ -27,16 +27,16 @@ const Home = () => {
           <span>Frontend developer</span>
         </h2>
 
-        <a href="#contact">
+        {/* <a href="#contact">
           <button className=" font-caveat text-3xl hover:bg-white hover:text-violet-900 font-bold border-2 hover:border-violet-900 rounded py-1 px-6 bg-violet-900 text-white border-white ml-4 md:ml-12 mt-10  transition-all duration-500 ease-in-out">
             Charlemos
           </button>
-        </a>
+        </a> */}
         <Button
           href="#contact"
           text="Charlemos"
-          style="primar"
-          className="text-3xl"
+          style="primary"
+          className="text-3xl ml-4 md:ml-12 mt-10"
         />
 
         <div className="absolute -bottom-10 bg-violet-700 opacity-40 right-[50%] w-8 h-8 rounded-full animate-up"></div>
