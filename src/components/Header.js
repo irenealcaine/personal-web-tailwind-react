@@ -11,7 +11,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div
+      <nav
         className={`bg-[linear-gradient(90deg,_#4c1d95_70%,_#be185d_90%)] shadow-lg py-4 px-7 md:flex md:justify-between sticky top-0 z-50 font-caveat transition-all duration-500 ease-in-out`}
       >
         <a href="/#home" className="text-3xl ">
@@ -89,7 +89,7 @@ const Header = () => {
             />
           </div>
         </div>
-      </div>
+      </nav>
     </>
   );
 };
