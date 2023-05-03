@@ -13,12 +13,6 @@ const Portfolio = () => {
         </h2>
         <div className="w-10/12 mx-auto flex flex-wrap gap-4 justify-center">
           <div className="w-full sm:w-5/12 md:w-3/12 flex items-center justify-center">
-            {/* <a
-              href="/portfolio"
-              className="text-center border rounded-lg font-bold p-1 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out px-4 py-2"
-            >
-              Ver todos
-            </a> */}
             <Button
               href="/portfolio"
               text="Ver todos"

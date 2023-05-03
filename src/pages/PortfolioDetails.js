@@ -2,6 +2,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { portfolioData } from "../components/data/PortfolioData";
+import Button from "../components/Button";
 
 import react from "../images/react.png";
 import tailwind from "../images/tailwind.png";
@@ -37,17 +38,13 @@ const PortfolioDetails = () => {
       <Header />
 
       <div className="w-11/12 mx-auto md:w-8/12 pb-8">
-        <h1 className="text-center text-6xl md:text-9xl w-7/10 pb-8 px-4 md:ml-12 font-caveat text-violet-600 transition-all duration-500 ease-in-out">
+        <h1 className="text-center text-7xl md:text-9xl w-7/10 pb-4 px-4 md:ml-12 font-caveat text-violet-600 transition-all duration-500 ease-in-out">
           Proyectos
         </h1>
-        <a
-          href="/"
-          className="text-center border rounded-lg font-bold p-1 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out px-4 py-2"
-        >
-          Atrás
-        </a>
+
+        <Button href="/" text="Atrás" design="primary" className="text-2xl" />
       </div>
-      <div className="flex flex-wrap w-10/12 mx-auto justify-center items-center gap-2 p-8">
+      <div className="flex flex-wrap w-10/12 mx-auto justify-center items-center gap-2 p-4">
         {filterOptions.map((option) => {
           return option.icon ? (
             <img
