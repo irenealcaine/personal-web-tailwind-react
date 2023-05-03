@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/portfolio" element={<PortfolioDetails />} />
-          <Route path="/portfolio/:id" element={<ProjectDetails />} />
+          <Route path="/portfolio/:id" exact element={<ProjectDetails />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -3,7 +3,8 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { portfolioData } from "../components/data/PortfolioData";
 import Button from "../components/Button";
-import { Link } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
+import ProjectDetails from "./ProjectDetails";
 
 import react from "../images/react.png";
 import tailwind from "../images/tailwind.png";
@@ -79,10 +80,6 @@ const PortfolioDetails = () => {
           )
           .map((data, key) => {
             return (
-              // <a
-              //   href={data.url}
-              //   target="_blank"
-              //   rel="noreferrer"
               <Link
                 to={`/portfolio/${data.id}`}
                 key={key}
@@ -109,11 +106,11 @@ const PortfolioDetails = () => {
                     ))}
                   </div>
                 </div>
-                {/* </a> */}
               </Link>
             );
           })}
       </div>
+
       <Contact />
       <Footer />
     </>
