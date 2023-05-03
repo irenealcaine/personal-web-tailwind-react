@@ -81,3 +81,10 @@ h2 span {
 h2:hover span {
   background-size: 100% 90%;
 }
+
+.shadow {
+  box-shadow: 0 0 0 0 #fff;
+}
+.shadow:hover {
+  box-shadow: 0 0 0 6px transparent;
+}

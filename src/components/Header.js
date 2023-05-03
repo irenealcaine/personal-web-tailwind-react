@@ -94,7 +94,7 @@ const Header = () => {
             <Button
               href="#contact"
               text="Charlemos"
-              className="mt-2 md:mt-0"
+              className="mt-2 md:mt-0 shadow"
               onClick={() => {
                 setOpen(!open);
               }}
