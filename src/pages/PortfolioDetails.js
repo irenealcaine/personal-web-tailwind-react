@@ -2,7 +2,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { portfolioData } from "../components/data/PortfolioData";
-import { Link } from "react-router-dom";
+import Button from "../components/Button";
 
 import react from "../images/react.png";
 import tailwind from "../images/tailwind.png";
@@ -18,16 +18,16 @@ import firebase from "../images/firebase.png";
 
 const filterOptions = [
   { text: "Todos", value: "all" },
+  { icon: js, value: js },
   { icon: react, value: react },
-  { icon: tailwind, value: tailwind },
   { icon: vue, value: vue },
-  { icon: mongo, value: mongo },
+  { icon: tailwind, value: tailwind },
+  { icon: mui, value: mui },
   { icon: sass, value: sass },
+  { icon: firebase, value: firebase },
+  { icon: mongo, value: mongo },
   { icon: nodejs, value: nodejs },
   { icon: express, value: express },
-  { icon: js, value: js },
-  { icon: mui, value: mui },
-  { icon: firebase, value: firebase },
 ];
 
 const PortfolioDetails = () => {
@@ -38,25 +38,21 @@ const PortfolioDetails = () => {
       <Header />
 
       <div className="w-11/12 mx-auto md:w-8/12 pb-8">
-        <h1 className="text-center text-8xl md:text-9xl w-7/10 pb-8 px-4 md:ml-12 font-caveat text-violet-600 transition-all duration-500 ease-in-out">
+        <h1 className="text-center text-7xl md:text-9xl w-7/10 pb-4 px-4 md:ml-12 font-caveat text-violet-600 transition-all duration-500 ease-in-out">
           Proyectos
         </h1>
-        <Link
-          to="/"
-          className="text-center border rounded-lg font-bold p-1 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out px-4 py-2"
-        >
-          Atrás
-        </Link>
+
+        <Button href="/" text="Atrás" design="primary" className="text-2xl" />
       </div>
-      <div className="flex flex-wrap w-10/12 mx-auto justify-center items-center gap-2 p-8">
+      <div className="flex flex-wrap w-10/12 mx-auto justify-center items-center gap-2 p-4">
         {filterOptions.map((option) => {
           return option.icon ? (
             <img
               src={option.icon}
               alt="icono"
               className={`${
-                filter === option.value ? "bg-purple-700/50" : ""
-              } h-9 md:h-16 border border-transparent p-1 md:p-2 hover:border-purple-700 hover:bg-purple-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
+                filter === option.value ? "bg-violet-700/50" : ""
+              } h-9 md:h-16 border border-transparent p-1 md:p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
               onClick={() => {
                 setFilter(option.value);
               }}
@@ -64,8 +60,8 @@ const PortfolioDetails = () => {
           ) : (
             <p
               className={`${
-                filter === option.value ? "bg-purple-700/50" : ""
-              } md:text-xl py-2 px-4 border border-transparent p-2 hover:border-purple-700 hover:bg-purple-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
+                filter === option.value ? "bg-violet-700/50" : ""
+              } md:text-xl py-2 px-4 border border-transparent p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
               onClick={() => {
                 setFilter(option.value);
               }}
@@ -87,7 +83,7 @@ const PortfolioDetails = () => {
                 target="_blank"
                 rel="noreferrer"
                 key={key}
-                className="w-full sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-purple-700 rounded-xl"
+                className="w-full sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-violet-700 rounded-xl"
               >
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img
@@ -95,17 +91,17 @@ const PortfolioDetails = () => {
                   alt=""
                   className="w-full group-hover:scale-150 transition-all duration-500 "
                 />
-                <p className="font-caveat text-2xl p-6 absolute -top-full left-1 group-hover:top-0 transition-all duration-500 z-50">
+                <p className="leading-none font-caveat text-2xl p-6 absolute -top-full left-1 group-hover:top-0 transition-all duration-500 z-50">
                   {data.title}
                 </p>
-                <div className="p-4 text-right absolute -bottom-full right-1 group-hover:bottom-0 transition-all duration-500 z-50">
+                <div className="leading-tight p-4 text-right absolute -bottom-full right-1 group-hover:bottom-0 transition-all duration-500 z-50">
                   {data.description}
-                  <div className="flex justify-end gap-1">
+                  <div className="flex justify-end gap-1 mt-1">
                     {data.icons.map((icon) => (
                       <img
                         src={icon}
                         alt="icono"
-                        className="h-8 md:h-12 md:p-2 p-1 transition-all duration-500 ease-in-out border border-purple-500 rounded-lg"
+                        className="h-8 p-1 transition-all duration-500 ease-in-out border border-violet-500 rounded-lg"
                       />
                     ))}
                   </div>

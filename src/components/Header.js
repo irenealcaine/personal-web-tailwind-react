@@ -4,17 +4,14 @@ import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
 import openMenu from "../images/menu.png";
 import closeMenu from "../images/close.png";
+import Button from "./Button";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
       <div
-        className={`${
-          open
-            ? "bg-gradient-to-l from-violet-600 via-violet-900 to-violet-900"
-            : "bg-[linear-gradient(90deg,_#7e22ce_70%,_#be185d_90%)]"
-        } shadow-lg py-4 px-7 md:flex md:justify-between sticky top-0 z-50 font-caveat transition-all duration-500 ease-in-out`}
+        className={`bg-[linear-gradient(90deg,_#4c1d95_70%,_#be185d_90%)] shadow-lg py-4 px-7 md:flex md:justify-between sticky top-0 z-50 font-caveat transition-all duration-500 ease-in-out`}
       >
         <a href="/#home" className="text-3xl ">
           Irene
@@ -79,16 +76,15 @@ const Header = () => {
                 />
               </a>
             </div>
-            <a href="#contact">
-              <button
-                className="bg-white text-violet-900 font-bold border-2 border-violet-900 rounded py-1 px-6 mx-2 hover:bg-violet-900 hover:text-white hover:border-white md:mt-0 mt-4  transition-all duration-500 ease-in-out"
-                onClick={() => {
-                  setOpen(!open);
-                }}
-              >
-                Charlemos
-              </button>
-            </a>
+
+            <Button
+              href="#contact"
+              text="Charlemos"
+              className="mt-2 md:mt-0"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            />
           </div>
         </div>
       </div>

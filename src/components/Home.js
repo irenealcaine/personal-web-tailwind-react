@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Portfolio from "../components/Portfolio";
 import Skills from "../components/Skills";
+import Button from "./Button";
 
 const Home = () => {
   return (
@@ -26,11 +27,17 @@ const Home = () => {
           <span>Frontend developer</span>
         </h2>
 
-        <a href="#contact">
+        {/* <a href="#contact">
           <button className=" font-caveat text-3xl hover:bg-white hover:text-violet-900 font-bold border-2 hover:border-violet-900 rounded py-1 px-6 bg-violet-900 text-white border-white ml-4 md:ml-12 mt-10  transition-all duration-500 ease-in-out">
             Charlemos
           </button>
-        </a>
+        </a> */}
+        <Button
+          href="#contact"
+          text="Charlemos"
+          design="primary"
+          className="text-3xl ml-4 md:ml-12 mt-10"
+        />
 
         <div className="absolute -bottom-10 bg-violet-700 opacity-40 right-[50%] w-8 h-8 rounded-full animate-up"></div>
         <div className="absolute -bottom-10 bg-pink-700 opacity-20 right-[32.5%] w-12 h-12 rounded-full animate-up animation-delay-250"></div>
