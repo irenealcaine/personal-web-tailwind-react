@@ -25,7 +25,7 @@ const Portfolio = () => {
                 target="_blank"
                 rel="noreferrer"
                 key={key}
-                className="w-full sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-purple-700 rounded-xl"
+                className="w-60 sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-violet-700 rounded-xl"
               >
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img
@@ -43,7 +43,7 @@ const Portfolio = () => {
                       <img
                         src={icon}
                         alt="icono"
-                        className="h-8 md:h-12 md:p-2 p-1 transition-all duration-500 ease-in-out border border-purple-500 rounded-lg"
+                        className="h-8 md:h-12 md:p-2 p-1 transition-all duration-500 ease-in-out border border-violet-500 rounded-lg"
                       />
                     ))}
                   </div>

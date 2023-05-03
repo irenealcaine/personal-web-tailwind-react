@@ -53,7 +53,7 @@ export const portfolioData = [
     github: "https://github.com/irenealcaine/APV_MERN_frontend",
     img: apv,
     favicon: apvfav,
-    title: "Administración veterinaria",
+    title: "APV",
     icons: [mongo, express, react, nodejs],
     description: "Administración de pacientes de veterinaria",
   },
