@@ -83,8 +83,15 @@ h2:hover span {
 }
 
 .shadow {
-  box-shadow: 0 0 0 0 #fff;
+  box-shadow: 0 0 0 0 #6d28d9;
 }
 .shadow:hover {
+  box-shadow: 0 0 0 6px transparent;
+}
+
+.shadow-secondary {
+  box-shadow: 0 0 0 0 #fff;
+}
+.shadow-secondary:hover {
   box-shadow: 0 0 0 6px transparent;
 }
