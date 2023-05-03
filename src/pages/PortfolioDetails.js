@@ -89,7 +89,7 @@ const PortfolioDetails = () => {
                 <img
                   src={data.favicon}
                   alt=""
-                  className="w-full group-hover:scale-150 transition-all duration-500 "
+                  className="w-full group-hover:scale-150 transition-all duration-500"
                 />
                 <p className="leading-none font-caveat text-2xl p-6 absolute -top-full left-1 group-hover:top-0 transition-all duration-500 z-50">
                   {data.title}
