@@ -35,7 +35,7 @@ const Home = () => {
         <Button
           href="#contact"
           text="Charlemos"
-          style="primary"
+          design="primary"
           className="text-3xl ml-4 md:ml-12 mt-10"
         />
 

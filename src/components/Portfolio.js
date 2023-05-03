@@ -2,6 +2,8 @@ import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import { portfolioData } from "./data/PortfolioData.js";
 
+import Button from "./Button";
+
 const Portfolio = () => {
   return (
     <>
@@ -10,13 +12,19 @@ const Portfolio = () => {
           <span>Proyectos</span>
         </h2>
         <div className="w-10/12 mx-auto flex flex-wrap gap-4 justify-center">
-          <div className=" p-8 w-full sm:w-5/12 md:w-3/12">
-            <a
+          <div className="w-full sm:w-5/12 md:w-3/12 flex items-center justify-center">
+            {/* <a
               href="/portfolio"
               className="text-center border rounded-lg font-bold p-1 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out px-4 py-2"
             >
               Ver todos
-            </a>
+            </a> */}
+            <Button
+              href="/portfolio"
+              text="Ver todos"
+              design="primary"
+              className="text-2xl mx-auto"
+            />
           </div>
           {portfolioData.slice(0, 5).map((data, key) => {
             return (
