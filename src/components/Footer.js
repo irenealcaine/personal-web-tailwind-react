@@ -1,6 +1,10 @@
 import React from "react";
-import github from "../images/github.png";
-import linkedin from "../images/linkedin.png";
+// import github from "../images/github.png";
+// import linkedin from "../images/linkedin.png";
+
+import github from "react-useanimations/lib/github";
+import linkedin from "react-useanimations/lib/linkedin";
+import UseAnimations from "react-useanimations";
 
 const Footer = () => {
   return (
@@ -16,18 +20,20 @@ const Footer = () => {
           href="https://www.github.com/irenealcaine"
           target={"_blank"}
           rel="noreferrer"
-          className="hover:font-bold hover:text-violet-600 transition-all duration-200 mx-3 p-1 border-b-2 border-violet-900"
+          className="flex items-center gap-2 hover:font-bold hover:text-violet-600 transition-all duration-200 mx-3 mb-1 border-b-2 border-violet-900"
         >
-          <img src={github} alt="" className="h-6 inline-block px-2" />
+          {/* <img src={github} alt="" className="h-6 inline-block px-2" /> */}
+          <UseAnimations animation={github} strokeColor="#fff" size={32} />
           github.com/irenealcaine
         </a>
         <a
           href="https://www.linkedin.com/in/irenealcaine/"
           target={"_blank"}
           rel="noreferrer"
-          className="hover:font-bold hover:text-violet-600 transition-all duration-200 mx-3 p-1 border-b-2 border-violet-900"
+          className="flex items-center gap-2 hover:font-bold hover:text-violet-600 transition-all duration-200 mx-3 mb-1 border-b-2 border-violet-900"
         >
-          <img src={linkedin} alt="" className="h-6 inline-block px-2" />
+          {/* <img src={linkedin} alt="" className="h-6 inline-block px-2" /> */}
+          <UseAnimations animation={linkedin} strokeColor="#fff" size={32} />
           linkedin.com/in/irenealcaine/
         </a>
       </div>
