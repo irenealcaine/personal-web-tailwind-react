@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { portfolioData } from "../components/data/PortfolioData";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 
 import react from "../images/react.png";
 import tailwind from "../images/tailwind.png";
@@ -78,10 +79,12 @@ const PortfolioDetails = () => {
           )
           .map((data, key) => {
             return (
-              <a
-                href={data.url}
-                target="_blank"
-                rel="noreferrer"
+              // <a
+              //   href={data.url}
+              //   target="_blank"
+              //   rel="noreferrer"
+              <Link
+                to={`/portfolio/${data.id}`}
                 key={key}
                 className="w-60 sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-violet-700 rounded-xl"
               >
@@ -106,7 +109,8 @@ const PortfolioDetails = () => {
                     ))}
                   </div>
                 </div>
-              </a>
+                {/* </a> */}
+              </Link>
             );
           })}
       </div>
