@@ -32,6 +32,12 @@ const Home = () => {
             Charlemos
           </button>
         </a>
+        <Button
+          href="#contact"
+          text="Charlemos"
+          style="primar"
+          className="text-3xl"
+        />
 
         <div className="absolute -bottom-10 bg-violet-700 opacity-40 right-[50%] w-8 h-8 rounded-full animate-up"></div>
         <div className="absolute -bottom-10 bg-pink-700 opacity-20 right-[32.5%] w-12 h-12 rounded-full animate-up animation-delay-250"></div>
@@ -56,12 +62,6 @@ const Home = () => {
         </a>
       </div>
       <div>
-        <Button
-          href="https://google.es"
-          text="hola"
-          style="primary"
-          className=""
-        />
         <Header />
         <Portfolio />
         <Skills />
