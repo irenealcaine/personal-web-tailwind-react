@@ -4,6 +4,7 @@ import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
 import openMenu from "../images/menu.png";
 import closeMenu from "../images/close.png";
+import Button from "./Button";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -79,16 +80,15 @@ const Header = () => {
                 />
               </a>
             </div>
-            <a href="#contact">
-              <button
-                className="bg-white text-violet-900 font-bold border-2 border-violet-900 rounded py-1 px-6 mx-2 hover:bg-violet-900 hover:text-white hover:border-white md:mt-0 mt-4  transition-all duration-500 ease-in-out"
-                onClick={() => {
-                  setOpen(!open);
-                }}
-              >
-                Charlemos
-              </button>
-            </a>
+
+            <Button
+              href="#contact"
+              text="Charlemos"
+              className="mt-2 md:mt-0"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            />
           </div>
         </div>
       </div>
