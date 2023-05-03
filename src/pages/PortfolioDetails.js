@@ -3,8 +3,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { portfolioData } from "../components/data/PortfolioData";
 import Button from "../components/Button";
-import { Link, Route, Switch } from "react-router-dom";
-import ProjectDetails from "./ProjectDetails";
+import { Link } from "react-router-dom";
 
 import react from "../images/react.png";
 import tailwind from "../images/tailwind.png";
@@ -52,18 +51,16 @@ const PortfolioDetails = () => {
             <img
               src={option.icon}
               alt="icono"
-              className={`${
-                filter === option.value ? "bg-violet-700/50" : ""
-              } h-9 md:h-16 border border-transparent p-1 md:p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
+              className={`${filter === option.value ? "bg-violet-700/50" : ""
+                } h-9 md:h-16 border border-transparent p-1 md:p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
               onClick={() => {
                 setFilter(option.value);
               }}
             />
           ) : (
             <p
-              className={`${
-                filter === option.value ? "bg-violet-700/50" : ""
-              } md:text-xl py-2 px-4 border border-transparent p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
+              className={`${filter === option.value ? "bg-violet-700/50" : ""
+                } md:text-xl py-2 px-4 border border-transparent p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
               onClick={() => {
                 setFilter(option.value);
               }}

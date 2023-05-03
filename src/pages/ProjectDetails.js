@@ -19,10 +19,13 @@ const ProjectDetails = () => {
         design="primary"
         className="text-2xl mx-auto"
       />
-      <div>
-        <h1>{project.title}</h1>
+      <div className="w-10/12 mx-auto">
+
+        <h1 className="text-center text-7xl md:text-9xl w-7/10 pb-4 px-4 md:ml-12 font-caveat text-violet-600 transition-all duration-500 ease-in-out">{project.title}</h1>
+        <img src={project.favicon} alt={project.title} className="h-10" />
+
         <img src={project.img} alt={project.title} />
-        <img src={project.favicon} alt={project.title} />
+
         <p>Tech usadas:
 
           {project.icons.map((icon) => {
