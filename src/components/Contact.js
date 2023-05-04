@@ -110,7 +110,7 @@ const Contact = () => {
               ></textarea>
 
               <button
-                className="border rounded-lg uppercase font-bold p-1 hover:bg-violet-900 bg-violet-700 transition-all duration-500 ease-in-out px-4 py-2"
+                className="border-2 text-white hover:text-violet-900 border-white hover:border-violet-900 rounded-lg font-caveat text-3xl p-1 bg-violet-900 hover:bg-white transition-all duration-500 ease-in-out px-4 py-2"
                 type="submit"
               >
                 Enviar email

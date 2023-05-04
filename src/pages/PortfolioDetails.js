@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { portfolioData } from "../components/data/PortfolioData";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 
 import react from "../images/react.png";
 import tailwind from "../images/tailwind.png";
@@ -78,23 +79,21 @@ const PortfolioDetails = () => {
           )
           .map((data, key) => {
             return (
-              <a
-                href={data.url}
-                target="_blank"
-                rel="noreferrer"
+              <Link
+                to={`/portfolio/${data.id}`}
                 key={key}
-                className="w-full sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-violet-700 rounded-xl"
+                className="w-60 sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-violet-700 rounded-xl"
               >
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img
                   src={data.favicon}
                   alt=""
-                  className="w-full group-hover:scale-150 transition-all duration-500 "
+                  className="w-full group-hover:scale-150 transition-all duration-500"
                 />
-                <p className="leading-none font-caveat text-2xl p-6 absolute -top-full left-1 group-hover:top-0 transition-all duration-500 z-50">
+                <p className="leading-none font-caveat text-2xl p-2 lg:p-6 absolute -top-full left-1 group-hover:top-0 transition-all duration-500 z-50">
                   {data.title}
                 </p>
-                <div className="leading-tight p-4 text-right absolute -bottom-full right-1 group-hover:bottom-0 transition-all duration-500 z-50">
+                <div className="leading-tight p-2 lg:p-6 text-right absolute -bottom-full right-1 group-hover:bottom-0 transition-all duration-500 z-50">
                   {data.description}
                   <div className="flex justify-end gap-1 mt-1">
                     {data.icons.map((icon) => (
@@ -106,10 +105,11 @@ const PortfolioDetails = () => {
                     ))}
                   </div>
                 </div>
-              </a>
+              </Link>
             );
           })}
       </div>
+
       <Contact />
       <Footer />
     </>

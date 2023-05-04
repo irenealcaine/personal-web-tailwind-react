@@ -1,16 +1,17 @@
 import React from "react";
 import { useState } from "react";
-import github from "../images/github.png";
-import linkedin from "../images/linkedin.png";
 import openMenu from "../images/menu.png";
 import closeMenu from "../images/close.png";
 import Button from "./Button";
+import github from "react-useanimations/lib/github";
+import linkedin from "react-useanimations/lib/linkedin";
+import UseAnimations from "react-useanimations";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div
+      <nav
         className={`bg-[linear-gradient(90deg,_#4c1d95_70%,_#be185d_90%)] shadow-lg py-4 px-7 md:flex md:justify-between sticky top-0 z-50 font-caveat transition-all duration-500 ease-in-out`}
       >
         <a href="/#home" className="text-3xl ">
@@ -52,16 +53,17 @@ const Header = () => {
             </a>
           </div>
           <div className="md:flex md:items-center">
-            <div className="flex items-center mx-2 md:mt-0 mt-2">
+            <div className="flex items-center mx-1 md:mx-4 gap-1 md:mt-0 mt-2">
               <a
                 href="https://www.github.com/irenealcaine"
                 target={"_blank"}
                 rel="noreferrer"
+                className="text-3xl"
               >
-                <img
-                  src={github}
-                  alt=""
-                  className="h-8 w-8 hover:filter hover:invert  transition-all duration-500 ease-in-out"
+                <UseAnimations
+                  animation={github}
+                  strokeColor="#fff"
+                  size={32}
                 />
               </a>
               <a
@@ -69,10 +71,10 @@ const Header = () => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                <img
-                  src={linkedin}
-                  alt=""
-                  className="h-8 w-8 mx-2 hover:filter hover:invert transition-all duration-500 ease-in-out"
+                <UseAnimations
+                  animation={linkedin}
+                  strokeColor="#fff"
+                  size={32}
                 />
               </a>
             </div>
@@ -80,14 +82,14 @@ const Header = () => {
             <Button
               href="#contact"
               text="Charlemos"
-              className="mt-2 md:mt-0"
+              className="mt-2 md:mt-0 shadow"
               onClick={() => {
                 setOpen(!open);
               }}
             />
           </div>
         </div>
-      </div>
+      </nav>
     </>
   );
 };
