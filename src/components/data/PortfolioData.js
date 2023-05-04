@@ -51,7 +51,8 @@ export const portfolioData = [
     title: "Amigaria",
     icons: [vue, sass, firebase],
     description: "Web 100% accesible de integración social",
-    longDescription: "",
+    longDescription:
+      "Web de integración social 100% accesible y para todos los públicos. Red social donde colgar en forma de ticket tus peticiones de ayuda, que cuando otro usuario acepta, ésta se elimina del tablón para el resto de usuarios. Cada ticket consta de un título, una breve descripción, fecha, categoría y autor. Hay una sección personal donde aparecen tus tickets, los cuales se pueden editar o borrar y los de otros usuarios que tu hayas aceptado.",
   },
   {
     id: 30,
@@ -62,7 +63,7 @@ export const portfolioData = [
     title: "Netfliclon",
     icons: [react, tailwind, firebase],
     description: "Clon de Netflix",
-    longDescription: "",
+    longDescription: "Web ",
   },
   {
     id: 40,
