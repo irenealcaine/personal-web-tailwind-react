@@ -119,7 +119,8 @@ export const portfolioData = [
     title: "Cryptotracker",
     icons: [react, mui],
     description: "Seguimiento de criptomonedas",
-    longDescription: "",
+    longDescription:
+      "Información actualizada de las criptomonedas más populares. Precios y gráficas de variación de precios del último año de 100 criptomonedas, así como el precio y market cap en tiempo real, tanto en euros como en dólares.",
   },
   {
     id: 90,
@@ -130,6 +131,7 @@ export const portfolioData = [
     title: "Porfolio",
     icons: [js],
     description: "Porfolio minimalista de proyectos de Irene Alcaine",
-    longDescription: "",
+    longDescription:
+      "Porfolio de diseño simplificado con enlaces a mis proyectos, modo noche y día y datos de contacto",
   },
 ];
