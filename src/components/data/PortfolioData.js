@@ -51,7 +51,8 @@ export const portfolioData = [
     title: "Amigaria",
     icons: [vue, sass, firebase],
     description: "Web 100% accesible de integración social",
-    longDescription: "",
+    longDescription:
+      "Web de integración social 100% accesible y para todos los públicos. Red social donde colgar en forma de ticket tus peticiones de ayuda, que cuando otro usuario acepta, ésta se elimina del tablón para el resto de usuarios. Cada ticket consta de un título, una breve descripción, fecha, categoría y autor. Hay una sección personal donde aparecen tus tickets, los cuales se pueden editar o borrar y los de otros usuarios que tu hayas aceptado.",
   },
   {
     id: 30,
@@ -62,7 +63,8 @@ export const portfolioData = [
     title: "Netfliclon",
     icons: [react, tailwind, firebase],
     description: "Clon de Netflix",
-    longDescription: "",
+    longDescription:
+      "Web que imita la de Netflix usando la API de TMDB. En la página principal se pueden ver los detalles de una de las películas de moda, así como listas de las novedades, las películas populares, las pelísulas en tendencia, las mejor valoradas y documentales. Cada película tiene su propia página con informacion de la película, como una descripción, la fecha de estreno, la duración y la nota. También se muestran los actores que participan y películas similares. Cada actor tiene también su propia página donde se muestra la fecha de nacimiento y la de fallecimiento si la hubiera, lugar de nacimiento, descripción de su carrera y sus participaciones en películas.",
   },
   {
     id: 40,
@@ -73,7 +75,8 @@ export const portfolioData = [
     title: "Spoticlon",
     icons: [react, tailwind],
     description: "Clon de Spotify",
-    longDescription: "",
+    longDescription:
+      "Web que imita la página de Spotify antigua, usando la API de Shazam, incluso se pueden escuchar las canciones. En la página principal se ven las canciones populares del momento a nivel mundial ordenadas por categoría, también se puede acceder mediante el menú a las canciones populares de tu zona, los artistas y los discos populares.",
   },
   {
     id: 50,
@@ -84,7 +87,8 @@ export const portfolioData = [
     title: "APV",
     icons: [mongo, express, react, nodejs],
     description: "Administración de pacientes de veterinaria",
-    longDescription: "",
+    longDescription:
+      "Web de administración de pacientes de veterinaria. Se puede ingresar en una cuenta existente, crear una si aún no se tiene o recuperar la contraseña si se ha perdido. Una vez habiendo ingresado en la cuenta se pueden agregar pacientes con sus datos y una vez agregados se pueden editar o borrar los datos.",
   },
   {
     id: 60,
@@ -96,7 +100,7 @@ export const portfolioData = [
     icons: [js, tailwind],
     description: "App de previsión del tiempo",
     longDescription:
-      "Web de pronóstico del tiempo que proporciona información precisa y detallada sobre el clima actual y los pronósticos para los próximos días. Con detección automática de ubicación, muestra la fecha y hora actual, así como la temperatura, humedad y velocidad del viento. Además, muestra una gráfica de las próximas 12 horas con la temperatura y probabilidad de lluvia, y una vista de siete días con información sobre la temperatura, humedad, velocidad del viento y probabilidad de lluvia para cada día.",
+      "Web de pronóstico del tiempo que proporciona información detallada sobre el clima actual y los pronósticos para los próximos días utilizando la API de Openweathermap. Con detección automática de ubicación, muestra la fecha y hora actual, así como la temperatura, humedad y velocidad del viento. Además, muestra una gráfica de las próximas 12 horas con la temperatura y probabilidad de lluvia, y una vista de siete días con información sobre la temperatura, humedad, velocidad del viento y probabilidad de lluvia para cada día.",
   },
   {
     id: 70,
@@ -119,7 +123,8 @@ export const portfolioData = [
     title: "Cryptotracker",
     icons: [react, mui],
     description: "Seguimiento de criptomonedas",
-    longDescription: "",
+    longDescription:
+      "Información actualizada de las criptomonedas más populares utilizando la API de coingecko. Precios y gráficas de variación de precios del último año de 100 criptomonedas, así como el precio y market cap en tiempo real, tanto en euros como en dólares.",
   },
   {
     id: 90,
@@ -130,6 +135,7 @@ export const portfolioData = [
     title: "Porfolio",
     icons: [js],
     description: "Porfolio minimalista de proyectos de Irene Alcaine",
-    longDescription: "",
+    longDescription:
+      "Porfolio de diseño simplificado con enlaces a mis proyectos, modo noche y día y datos de contacto",
   },
 ];
