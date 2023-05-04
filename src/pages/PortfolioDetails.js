@@ -51,16 +51,18 @@ const PortfolioDetails = () => {
             <img
               src={option.icon}
               alt="icono"
-              className={`${filter === option.value ? "bg-violet-700/50" : ""
-                } h-9 md:h-16 border border-transparent p-1 md:p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
+              className={`${
+                filter === option.value ? "bg-violet-700/50" : ""
+              } h-9 md:h-16 border border-transparent p-1 md:p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
               onClick={() => {
                 setFilter(option.value);
               }}
             />
           ) : (
             <p
-              className={`${filter === option.value ? "bg-violet-700/50" : ""
-                } md:text-xl py-2 px-4 border border-transparent p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
+              className={`${
+                filter === option.value ? "bg-violet-700/50" : ""
+              } md:text-xl py-2 px-4 border border-transparent p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
               onClick={() => {
                 setFilter(option.value);
               }}
@@ -88,10 +90,10 @@ const PortfolioDetails = () => {
                   alt=""
                   className="w-full group-hover:scale-150 transition-all duration-500"
                 />
-                <p className="leading-none font-caveat text-2xl p-6 absolute -top-full left-1 group-hover:top-0 transition-all duration-500 z-50">
+                <p className="leading-none font-caveat text-2xl p-2 lg:p-6 absolute -top-full left-1 group-hover:top-0 transition-all duration-500 z-50">
                   {data.title}
                 </p>
-                <div className="leading-tight p-4 text-right absolute -bottom-full right-1 group-hover:bottom-0 transition-all duration-500 z-50">
+                <div className="leading-tight p-2 lg:p-6 text-right absolute -bottom-full right-1 group-hover:bottom-0 transition-all duration-500 z-50">
                   {data.description}
                   <div className="flex justify-end gap-1 mt-1">
                     {data.icons.map((icon) => (

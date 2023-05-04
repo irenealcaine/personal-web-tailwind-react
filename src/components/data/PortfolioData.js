@@ -39,6 +39,8 @@ export const portfolioData = [
     title: "Canguro de mascotas",
     icons: [react, tailwind],
     description: "Web de guarderia y paseos de mascotas",
+    longDescription:
+      "Web que ofrece servicios de canguro de mascotas en Llíria, Valencia, donde se ofrence información sobre los diferentes servicios para perros. Se muestran opiniones de clientes satisfechos y una galería de fotos de los perros alojados, así como datos de contacto.",
   },
   {
     id: 20,
@@ -89,6 +91,8 @@ export const portfolioData = [
     title: "Weather app",
     icons: [js, tailwind],
     description: "App de previsión del tiempo",
+    longDescription:
+      "Web de pronóstico del tiempo que proporciona información precisa y detallada sobre el clima actual y los pronósticos para los próximos días. Con detección automática de ubicación, muestra la fecha y hora actual, así como la temperatura, humedad y velocidad del viento. Además, muestra una gráfica de las próximas 12 horas con la temperatura y probabilidad de lluvia, y una vista de siete días con información sobre la temperatura, humedad, velocidad del viento y probabilidad de lluvia para cada día.",
   },
   {
     id: 70,
