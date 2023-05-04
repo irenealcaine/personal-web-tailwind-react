@@ -51,6 +51,7 @@ export const portfolioData = [
     title: "Amigaria",
     icons: [vue, sass, firebase],
     description: "Web 100% accesible de integración social",
+    longDescription: "",
   },
   {
     id: 30,
@@ -61,6 +62,7 @@ export const portfolioData = [
     title: "Netfliclon",
     icons: [react, tailwind, firebase],
     description: "Clon de Netflix",
+    longDescription: "",
   },
   {
     id: 40,
@@ -71,6 +73,7 @@ export const portfolioData = [
     title: "Spoticlon",
     icons: [react, tailwind],
     description: "Clon de Spotify",
+    longDescription: "",
   },
   {
     id: 50,
@@ -81,6 +84,7 @@ export const portfolioData = [
     title: "APV",
     icons: [mongo, express, react, nodejs],
     description: "Administración de pacientes de veterinaria",
+    longDescription: "",
   },
   {
     id: 60,
@@ -103,6 +107,8 @@ export const portfolioData = [
     title: "ToDo list",
     icons: [vue, tailwind],
     description: "App de lista de tareas pendientes",
+    longDescription:
+      "Web de lista de tareas pendientes, cada tarea está asignada a una categoría (trabajo o personal) y se muestran con colores diferentes. Cada tarea se puede editar, marcar como realizada o borrar. Los datos se almacenan en localStorage.",
   },
   {
     id: 80,
@@ -113,6 +119,7 @@ export const portfolioData = [
     title: "Cryptotracker",
     icons: [react, mui],
     description: "Seguimiento de criptomonedas",
+    longDescription: "",
   },
   {
     id: 90,
@@ -123,5 +130,6 @@ export const portfolioData = [
     title: "Porfolio",
     icons: [js],
     description: "Porfolio minimalista de proyectos de Irene Alcaine",
+    longDescription: "",
   },
 ];
