@@ -75,7 +75,8 @@ export const portfolioData = [
     title: "Spoticlon",
     icons: [react, tailwind],
     description: "Clon de Spotify",
-    longDescription: "",
+    longDescription:
+      "Web que imita la página de Spotify antigua, usando la API de Shazam, incluso se pueden escuchar las canciones. En la página principal se ven las canciones populares del momento a nivel mundial ordenadas por categoría, también se puede acceder mediante el menú a las canciones populares de tu zona, los artistas y los discos populares.",
   },
   {
     id: 50,
@@ -86,7 +87,8 @@ export const portfolioData = [
     title: "APV",
     icons: [mongo, express, react, nodejs],
     description: "Administración de pacientes de veterinaria",
-    longDescription: "",
+    longDescription:
+      "Web de administración de pacientes de veterinaria. Se puede ingresar en una cuenta existente, crear una si aún no se tiene o recuperar la contraseña si se ha perdido. Una vez habiendo ingresado en la cuenta se pueden agregar pacientes con sus datos y una vez agregados se pueden editar o borrar los datos.",
   },
   {
     id: 60,
