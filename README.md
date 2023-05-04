@@ -34,8 +34,8 @@ Si te gustaría contribuir a este proyecto, por favor sigue los siguientes pasos
 - emailjs es una herramienta que utilicé para crear el formulario de contacto.
 
 ## Tareas pendientes
-- [ ] ~~**Colores aleatorios**: añadir la opción de que los colores de la página cambien aleatoriamente cada vez que se recarga la página.~~ **IMPOSIBLE**, quizá en un futuro me plantee añadir un selector.
-- [ ] **Nuevo diseño para la sección de portafolio**: actualizar el diseño de la sección de portafolio para hacerlo más atractivo y fácil de usar.
-- [ ] **Selector de tecnologías**: añadir un selector en la sección de portafolio para filtrar los proyectos según la tecnología utilizada.
-- [ ] **Páginas de proyectos detalladas**: crear una página para cada proyecto con más detalles sobre el mismo, incluyendo capturas de pantalla y una descripción más detallada.
+- [ ] ~~**Colores aleatorios**: añadir la opción de que los colores de la página cambien aleatoriamente cada vez que se recarga la página.~~ ` IMPOSIBLE, quizá en un futuro me plantee añadir un selector.`
+- [x] **Nuevo diseño para la sección de portafolio**: actualizar el diseño de la sección de portafolio para hacerlo más atractivo y fácil de usar.
+- [x] **Selector de tecnologías**: añadir un selector en la sección de portafolio para filtrar los proyectos según la tecnología utilizada.
+- [x] **Páginas de proyectos detalladas**: crear una página para cada proyecto con más detalles sobre el mismo, incluyendo capturas de pantalla y una descripción más detallada.
 - [ ] **Selector de idioma**: añadir la opción de cambiar el idioma de la página a través de un botón.
