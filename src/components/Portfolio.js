@@ -1,6 +1,7 @@
 import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import { portfolioData } from "./data/PortfolioData.js";
+import { Link } from "react-router-dom";
 
 import Button from "./Button";
 
@@ -22,10 +23,8 @@ const Portfolio = () => {
           </div>
           {portfolioData.slice(0, 5).map((data, key) => {
             return (
-              <a
-                href={data.url}
-                target="_blank"
-                rel="noreferrer"
+              <Link
+                to={`/portfolio/${data.id}`}
                 key={key}
                 className="w-60 sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-violet-700 rounded-xl"
               >
@@ -50,7 +49,7 @@ const Portfolio = () => {
                     ))}
                   </div>
                 </div>
-              </a>
+              </Link>
             );
           })}
         </div>
