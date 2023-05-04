@@ -63,7 +63,8 @@ export const portfolioData = [
     title: "Netfliclon",
     icons: [react, tailwind, firebase],
     description: "Clon de Netflix",
-    longDescription: "Web ",
+    longDescription:
+      "Web que imita la de Netflix usando la API de TMDB. En la página principal se pueden ver los detalles de una de las películas de moda, así como listas de las novedades, las películas populares, las pelísulas en tendencia, las mejor valoradas y documentales. Cada película tiene su propia página con informacion de la película, como una descripción, la fecha de estreno, la duración y la nota. También se muestran los actores que participan y películas similares. Cada actor tiene también su propia página donde se muestra la fecha de nacimiento y la de fallecimiento si la hubiera, lugar de nacimiento, descripción de su carrera y sus participaciones en películas.",
   },
   {
     id: 40,
@@ -97,7 +98,7 @@ export const portfolioData = [
     icons: [js, tailwind],
     description: "App de previsión del tiempo",
     longDescription:
-      "Web de pronóstico del tiempo que proporciona información precisa y detallada sobre el clima actual y los pronósticos para los próximos días. Con detección automática de ubicación, muestra la fecha y hora actual, así como la temperatura, humedad y velocidad del viento. Además, muestra una gráfica de las próximas 12 horas con la temperatura y probabilidad de lluvia, y una vista de siete días con información sobre la temperatura, humedad, velocidad del viento y probabilidad de lluvia para cada día.",
+      "Web de pronóstico del tiempo que proporciona información detallada sobre el clima actual y los pronósticos para los próximos días utilizando la API de Openweathermap. Con detección automática de ubicación, muestra la fecha y hora actual, así como la temperatura, humedad y velocidad del viento. Además, muestra una gráfica de las próximas 12 horas con la temperatura y probabilidad de lluvia, y una vista de siete días con información sobre la temperatura, humedad, velocidad del viento y probabilidad de lluvia para cada día.",
   },
   {
     id: 70,
@@ -121,7 +122,7 @@ export const portfolioData = [
     icons: [react, mui],
     description: "Seguimiento de criptomonedas",
     longDescription:
-      "Información actualizada de las criptomonedas más populares. Precios y gráficas de variación de precios del último año de 100 criptomonedas, así como el precio y market cap en tiempo real, tanto en euros como en dólares.",
+      "Información actualizada de las criptomonedas más populares utilizando la API de coingecko. Precios y gráficas de variación de precios del último año de 100 criptomonedas, así como el precio y market cap en tiempo real, tanto en euros como en dólares.",
   },
   {
     id: 90,
