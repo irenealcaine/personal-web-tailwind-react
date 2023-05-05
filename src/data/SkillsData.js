@@ -9,10 +9,10 @@ import sass from "../images/sass.png";
 import vite from "../images/vite.png";
 import git from "../images/git.png";
 import figma from "../images/figma.png";
-import mongo from "../images/mongo.svg";
 import npm from "../images/npm.svg";
-import nodejs from "../images/nodejs.png";
-import express from "../images/express.png";
+// import mongo from "../images/mongo.svg";
+// import nodejs from "../images/nodejs.png";
+// import express from "../images/express.png";
 import firebase from "../images/firebase.png";
 
 import bootstrap from "../images/bootstrap.png";
@@ -27,7 +27,7 @@ export const skillsData = [
   },
   {
     title: "Otras",
-    icons: [vite, git, npm, figma, mongo, nodejs, express, firebase],
+    icons: [vite, git, npm, figma, firebase],
   },
   {
     title: "Próx.",
