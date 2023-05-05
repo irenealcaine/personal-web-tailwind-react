@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -8,11 +9,10 @@ import { Link } from "react-router-dom";
 import react from "../images/react.png";
 import tailwind from "../images/tailwind.png";
 import vue from "../images/vue.png";
-import mongo from "../images/mongo.svg";
-import { useState } from "react";
-import nodejs from "../images/nodejs.png";
 import sass from "../images/sass.png";
-import express from "../images/express.png";
+// import mongo from "../images/mongo.svg";
+// import nodejs from "../images/nodejs.png";
+// import express from "../images/express.png";
 import js from "../images/js.png";
 import mui from "../images/mui.png";
 import firebase from "../images/firebase.png";
@@ -26,9 +26,9 @@ const filterOptions = [
   { icon: mui, value: mui },
   { icon: sass, value: sass },
   { icon: firebase, value: firebase },
-  { icon: mongo, value: mongo },
-  { icon: nodejs, value: nodejs },
-  { icon: express, value: express },
+  // { icon: mongo, value: mongo },
+  // { icon: nodejs, value: nodejs },
+  // { icon: express, value: express },
 ];
 
 const PortfolioDetails = () => {
@@ -51,18 +51,16 @@ const PortfolioDetails = () => {
             <img
               src={option.icon}
               alt="icono"
-              className={`${
-                filter === option.value ? "bg-violet-700/50" : ""
-              } h-9 md:h-16 border border-transparent p-1 md:p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
+              className={`${filter === option.value ? "bg-violet-700/50" : ""
+                } h-9 md:h-16 border border-transparent p-1 md:p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
               onClick={() => {
                 setFilter(option.value);
               }}
             />
           ) : (
             <p
-              className={`${
-                filter === option.value ? "bg-violet-700/50" : ""
-              } md:text-xl py-2 px-4 border border-transparent p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
+              className={`${filter === option.value ? "bg-violet-700/50" : ""
+                } md:text-xl py-2 px-4 border border-transparent p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
               onClick={() => {
                 setFilter(option.value);
               }}

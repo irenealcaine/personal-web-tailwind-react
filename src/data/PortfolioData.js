@@ -1,5 +1,5 @@
 import amigaria from "../images/amigaria.png";
-import apv from "../images/apv.png";
+// import apv from "../images/apv.png";
 import todolistapp from "../images/todolistapp.png";
 import weatherApp from "../images/weatherApp.png";
 import crypto from "../images/crypto.png";
@@ -9,7 +9,7 @@ import minimal from "../images/minimal.png";
 import mascotas from "../images/mascotas.png";
 
 import amigariafav from "../images/amigariafav.svg";
-import apvfav from "../images/APVfav2.png";
+// import apvfav from "../images/APVfav2.png";
 import todofav from "../images/todofav2.png";
 import sunfav from "../images/sunfav2.png";
 import coinfav from "../images/coinfav2.png";
@@ -21,10 +21,10 @@ import mascotasfav from "../images/mascotasfav.png";
 import react from "../images/react.png";
 import tailwind from "../images/tailwind.png";
 import vue from "../images/vue.png";
-import mongo from "../images/mongo.svg";
-import nodejs from "../images/nodejs.png";
+// import mongo from "../images/mongo.svg";
+// import nodejs from "../images/nodejs.png";
+// import express from "../images/express.png";
 import sass from "../images/sass.png";
-import express from "../images/express.png";
 import js from "../images/js.png";
 import mui from "../images/mui.png";
 import firebase from "../images/firebase.png";
@@ -78,18 +78,18 @@ export const portfolioData = [
     longDescription:
       "Web que imita la página de Spotify antigua, usando la API de Shazam, incluso se pueden escuchar las canciones. En la página principal se ven las canciones populares del momento a nivel mundial ordenadas por categoría, también se puede acceder mediante el menú a las canciones populares de tu zona, los artistas y los discos populares.",
   },
-  {
-    id: 50,
-    url: "https://golden-melba-970593.netlify.app",
-    github: "https://github.com/irenealcaine/APV_MERN_frontend",
-    img: apv,
-    favicon: apvfav,
-    title: "APV",
-    icons: [mongo, express, react, nodejs],
-    description: "Administración de pacientes de veterinaria",
-    longDescription:
-      "Web de administración de pacientes de veterinaria. Se puede ingresar en una cuenta existente, crear una si aún no se tiene o recuperar la contraseña si se ha perdido. Una vez habiendo ingresado en la cuenta se pueden agregar pacientes con sus datos y una vez agregados se pueden editar o borrar los datos.",
-  },
+  // {
+  //   id: 50,
+  //   url: "https://golden-melba-970593.netlify.app",
+  //   github: "https://github.com/irenealcaine/APV_MERN_frontend",
+  //   img: apv,
+  //   favicon: apvfav,
+  //   title: "APV",
+  //   icons: [mongo, express, react, nodejs],
+  //   description: "Administración de pacientes de veterinaria",
+  //   longDescription:
+  //     "Web de administración de pacientes de veterinaria. Se puede ingresar en una cuenta existente, crear una si aún no se tiene o recuperar la contraseña si se ha perdido. Una vez habiendo ingresado en la cuenta se pueden agregar pacientes con sus datos y una vez agregados se pueden editar o borrar los datos.",
+  // },
   {
     id: 60,
     url: "https://prismatic-chaja-00b433.netlify.app",
