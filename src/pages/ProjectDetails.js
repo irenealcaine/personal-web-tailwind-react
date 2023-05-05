@@ -19,7 +19,7 @@ const ProjectDetails = () => {
         className="text-2xl m-4"
       />
       <div className="w-11/12 mx-auto">
-        <h1 className="text-center text-7xl py-4 md:text-9xl md:ml-12 font-caveat text-violet-600 transition-all duration-500">
+        <h1 className="text-center text-7xl py-4 md:text-9xl font-caveat text-violet-600 transition-all duration-500">
           {project.title}
         </h1>
         <div className="flex gap-4 items-start flex-col md:flex-row">
