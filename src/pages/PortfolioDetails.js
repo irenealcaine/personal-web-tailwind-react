@@ -39,7 +39,7 @@ const PortfolioDetails = () => {
       <Header />
 
       <div className="w-11/12 mx-auto md:w-8/12 pb-8">
-        <h1 className="text-center text-7xl md:text-9xl pb-4 px-4 font-caveat text-violet-600 transition-all duration-500 ease-in-out">
+        <h1 className="text-center text-7xl md:text-9xl py-4 px-4 font-caveat text-violet-600 transition-all duration-500 ease-in-out">
           Proyectos
         </h1>
 
