@@ -1,7 +1,7 @@
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { portfolioData } from "../components/data/PortfolioData";
+import { portfolioData } from "../data/PortfolioData";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
 

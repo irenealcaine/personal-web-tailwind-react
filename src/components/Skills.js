@@ -2,9 +2,9 @@ import CV from "../cv/CV_Irene_Alcaine_FEB.pdf";
 import React from "react";
 import Button from "./Button";
 
-import { skillsData } from "./data/SkillsData";
-import { educationData } from "./data/educationData";
-import { experienceData } from "./data/experienceData";
+import { skillsData } from "../data/SkillsData";
+import { educationData } from "../data/educationData";
+import { experienceData } from "../data/experienceData";
 
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
