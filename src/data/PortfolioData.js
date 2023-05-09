@@ -17,6 +17,7 @@ import melodyfav from "../images/melodyfav2.png";
 import netfliclonfav from "../images/netfliclonfav.jpg";
 import IAfav from "../images/IAfav.png";
 import mascotasfav from "../images/mascotasfav.png";
+import shopfav from "../images/shop.png";
 
 import react from "../images/react.png";
 import tailwind from "../images/tailwind.png";
@@ -28,6 +29,7 @@ import sass from "../images/sass.png";
 import js from "../images/js.png";
 import mui from "../images/mui.png";
 import firebase from "../images/firebase.png";
+import bootstrap from "../images/bootstrap.png";
 
 export const portfolioData = [
   {
@@ -65,6 +67,18 @@ export const portfolioData = [
     description: "Clon de Netflix",
     longDescription:
       "Web que imita la de Netflix usando la API de TMDB. En la página principal se pueden ver los detalles de una de las películas de moda, así como listas de las novedades, las películas populares, las pelísulas en tendencia, las mejor valoradas y documentales. Cada película tiene su propia página con informacion de la película, como una descripción, la fecha de estreno, la duración y la nota. También se muestran los actores que participan y películas similares. Cada actor tiene también su propia página donde se muestra la fecha de nacimiento y la de fallecimiento si la hubiera, lugar de nacimiento, descripción de su carrera y sus participaciones en películas.",
+  },
+  {
+    id: 31,
+    url: "https://magenta-lily-93994f.netlify.app/",
+    github: "https://github.com/irenealcaine/commerce-react",
+    img: netfliclon,
+    favicon: shopfav,
+    title: "Catálogo",
+    icons: [react, bootstrap],
+    description: "Catálogo de tienda",
+    longDescription:
+      "Catálogo sencillo de una tienda ficticia. Con barra de búsqueda, ordenación por precio, número de ventas y opiniones de usuarios y filtros de stock, nota de usuarios y categorías. Posibilidad de añadir al carrito, el cual tiene una página propia donde gestiona los productos añadidos.",
   },
   {
     id: 40,

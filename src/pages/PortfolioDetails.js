@@ -10,6 +10,7 @@ import react from "../images/react.png";
 import tailwind from "../images/tailwind.png";
 import vue from "../images/vue.png";
 import sass from "../images/sass.png";
+import bootstrap from "../images/bootstrap.png";
 // import mongo from "../images/mongo.svg";
 // import nodejs from "../images/nodejs.png";
 // import express from "../images/express.png";
@@ -19,12 +20,16 @@ import firebase from "../images/firebase.png";
 
 const filterOptions = [
   { text: "Todos", value: "all" },
+
   { icon: js, value: js },
   { icon: react, value: react },
   { icon: vue, value: vue },
+
   { icon: tailwind, value: tailwind },
   { icon: mui, value: mui },
   { icon: sass, value: sass },
+  { icon: bootstrap, value: bootstrap },
+
   { icon: firebase, value: firebase },
   // { icon: mongo, value: mongo },
   // { icon: nodejs, value: nodejs },
@@ -51,16 +56,18 @@ const PortfolioDetails = () => {
             <img
               src={option.icon}
               alt="icono"
-              className={`${filter === option.value ? "bg-violet-700/50" : ""
-                } h-9 md:h-16 border border-transparent p-1 md:p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
+              className={`${
+                filter === option.value ? "bg-violet-700/50" : ""
+              } h-9 md:h-16 border border-transparent p-1 md:p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
               onClick={() => {
                 setFilter(option.value);
               }}
             />
           ) : (
             <p
-              className={`${filter === option.value ? "bg-violet-700/50" : ""
-                } md:text-xl py-2 px-4 border border-transparent p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
+              className={`${
+                filter === option.value ? "bg-violet-700/50" : ""
+              } md:text-xl py-2 px-4 border border-transparent p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
               onClick={() => {
                 setFilter(option.value);
               }}
