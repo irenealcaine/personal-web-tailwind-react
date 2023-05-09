@@ -7,6 +7,7 @@ import spotyclon from "../images/spotyclon.png";
 import netfliclon from "../images/netfliclon.png";
 import minimal from "../images/minimal.png";
 import mascotas from "../images/mascotas.png";
+import shop from "../images/shop.png";
 
 import amigariafav from "../images/amigariafav.svg";
 // import apvfav from "../images/APVfav2.png";
@@ -17,7 +18,7 @@ import melodyfav from "../images/melodyfav2.png";
 import netfliclonfav from "../images/netfliclonfav.jpg";
 import IAfav from "../images/IAfav.png";
 import mascotasfav from "../images/mascotasfav.png";
-import shopfav from "../images/shop.png";
+import shopfav from "../images/shopfav.png";
 
 import react from "../images/react.png";
 import tailwind from "../images/tailwind.png";
@@ -72,7 +73,7 @@ export const portfolioData = [
     id: 31,
     url: "https://magenta-lily-93994f.netlify.app/",
     github: "https://github.com/irenealcaine/commerce-react",
-    img: netfliclon,
+    img: shop,
     favicon: shopfav,
     title: "Catálogo",
     icons: [react, bootstrap],
