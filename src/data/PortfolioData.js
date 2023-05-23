@@ -179,6 +179,6 @@ export const portfolioData = [
     icons: [vue, tailwind],
     description: "Juego del tres en raya",
     longDescription:
-      "Juego del tres en raya, que indica a que jugador le toca jugar, y en cuando acaba el juego aparece un cartel diciendo el ganador o si es un empate, así como un botón para resetear el juego y empezar otra partida.",
+      "Juego del tres en raya, que indica a que jugador le toca jugar, además de un contador de victorias. Cuando acaba el juego aparece un cartel diciendo el ganador o si es un empate, así como un botón para resetear el juego y empezar otra partida.",
   },
 ];
