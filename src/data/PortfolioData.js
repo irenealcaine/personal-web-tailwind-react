@@ -8,6 +8,8 @@ import netfliclon from "../images/netfliclon.png";
 import minimal from "../images/minimal.png";
 import mascotas from "../images/mascotas.png";
 import shop from "../images/shop.png";
+import tictactoe from "../images/tictactoe.png";
+import dashboard from "../images/dashboard.png";
 
 import amigariafav from "../images/amigariafav.svg";
 // import apvfav from "../images/APVfav2.png";
@@ -19,6 +21,8 @@ import netfliclonfav from "../images/netfliclonfav.jpg";
 import IAfav from "../images/IAfav.png";
 import mascotasfav from "../images/mascotasfav.png";
 import shopfav from "../images/shopfav.png";
+import tictactoefav from "../images/tictactoefav.svg";
+import dashboardfav from "../images/dashboardfav.png";
 
 import react from "../images/react.png";
 import tailwind from "../images/tailwind.png";
@@ -80,6 +84,18 @@ export const portfolioData = [
     description: "Catálogo de tienda",
     longDescription:
       "Catálogo sencillo de una tienda ficticia. Con barra de búsqueda, ordenación por precio, número de ventas y opiniones de usuarios y filtros de stock, nota de usuarios y categorías. Posibilidad de añadir al carrito, el cual tiene una página propia donde gestiona los productos añadidos.",
+  },
+  {
+    id: 32,
+    url: "https://vermillion-starburst-865331.netlify.app/login",
+    github: "https://github.com/irenealcaine/react-sass-mui",
+    img: dashboard,
+    favicon: dashboardfav,
+    title: "Dashboard",
+    icons: [react, mui, sass, firebase],
+    description: "Dashboard de administrador",
+    longDescription:
+      "Panel de control de administrador con registro de usuarios y autentificación con distintas bases de datos. Estadísitcas en tiempo real de nuevos usuarios y productos del último mes y el porcentaje de crecimiento con especto al mes anterior, así como estadisitcas de ganancias y beneficios. Tablas de usuarios con posibilidad de agregar nuevos y tablas de productos y ordenes que se pueden eliminar.",
   },
   {
     id: 40,
@@ -152,5 +168,17 @@ export const portfolioData = [
     description: "Porfolio minimalista de proyectos de Irene Alcaine",
     longDescription:
       "Porfolio de diseño simplificado con enlaces a mis proyectos, modo noche y día y datos de contacto",
+  },
+  {
+    id: 100,
+    url: "https://coruscating-mooncake-d025e2.netlify.app/",
+    github: "https://github.com/irenealcaine/tic-tac-toe-in-vue",
+    img: tictactoe,
+    favicon: tictactoefav,
+    title: "Tic-tac-toe",
+    icons: [vue, tailwind],
+    description: "Juego del tres en raya",
+    longDescription:
+      "Juego del tres en raya, que indica a que jugador le toca jugar, y en cuando acaba el juego aparece un cartel diciendo el ganador o si es un empate, así como un botón para resetear el juego y empezar otra partida.",
   },
 ];
