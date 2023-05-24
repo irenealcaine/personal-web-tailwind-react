@@ -87,7 +87,7 @@ export const portfolioData = [
   },
   {
     id: 32,
-    url: "https://vermillion-starburst-865331.netlify.app/login",
+    url: "https://vermillion-starburst-865331.netlify.app/",
     github: "https://github.com/irenealcaine/react-sass-mui",
     img: dashboard,
     favicon: dashboardfav,
