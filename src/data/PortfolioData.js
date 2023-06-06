@@ -10,6 +10,7 @@ import mascotas from "../images/mascotas.png";
 import shop from "../images/shop.png";
 import tictactoe from "../images/tictactoe.png";
 import dashboard from "../images/dashboard.png";
+import ERDNP from "../images/ERDNP.png";
 
 import amigariafav from "../images/amigariafav.svg";
 // import apvfav from "../images/APVfav2.png";
@@ -23,6 +24,7 @@ import mascotasfav from "../images/mascotasfav.png";
 import shopfav from "../images/shopfav.png";
 import tictactoefav from "../images/tictactoefav.svg";
 import dashboardfav from "../images/dashboardfav.png";
+import ERDNPfav from "../images/ERDNPfav.svg";
 
 import react from "../images/react.png";
 import tailwind from "../images/tailwind.png";
@@ -60,6 +62,18 @@ export const portfolioData = [
     description: "Web 100% accesible de integración social",
     longDescription:
       "Web de integración social 100% accesible y para todos los públicos. Red social donde colgar en forma de ticket tus peticiones de ayuda, que cuando otro usuario acepta, ésta se elimina del tablón para el resto de usuarios. Cada ticket consta de un título, una breve descripción, fecha, categoría y autor. Hay una sección personal donde aparecen tus tickets, los cuales se pueden editar o borrar y los de otros usuarios que tu hayas aceptado.",
+  },
+  {
+    id: 21,
+    url: "https://glowing-klepon-fa3a77.netlify.app",
+    github: "https://github.com/irenealcaine/el-rincon-de-no-pensar",
+    img: ERDNP,
+    favicon: ERDNPfav,
+    title: "El rincón de no pensar",
+    icons: [react, tailwind],
+    description: "Recopilación de proyectos pequeños",
+    longDescription:
+      "Web donde se encuentran proyectos pequeños pero llenos de encanto, todos ellos hecos con React y Tailwind. Aquí, presento una colección de creaciones modestas que, aunque demasiado pequeñas para tener su propio sitio web, merecen ser apreciadas y compartidas.",
   },
   {
     id: 30,
