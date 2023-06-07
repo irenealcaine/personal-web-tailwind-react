@@ -92,7 +92,7 @@ const PortfolioDetails = () => {
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img
                   src={data.favicon}
-                  alt=""
+                  alt="icono"
                   className="w-full group-hover:scale-150 transition-all duration-500"
                 />
                 <p className="leading-none font-caveat text-2xl p-2 lg:p-6 absolute -top-full left-1 group-hover:top-0 transition-all duration-500 z-50">
