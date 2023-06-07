@@ -14,11 +14,13 @@ import npm from "../images/npm.svg";
 // import nodejs from "../images/nodejs.png";
 // import express from "../images/express.png";
 import firebase from "../images/firebase.png";
+import netlify from "../images/netlify.png";
 
 import bootstrap from "../images/bootstrap.png";
 import flutter from "../images/flutter.svg";
 import wordpress from "../images/wordpress.png";
 import mui from "../images/mui.png";
+import ts from "../images/ts.png";
 
 export const skillsData = [
   {
@@ -27,10 +29,10 @@ export const skillsData = [
   },
   {
     title: "Otras",
-    icons: [vite, git, npm, figma, firebase],
+    icons: [vite, git, npm, figma, firebase, netlify],
   },
   {
     title: "Próx.",
-    icons: [bootstrap, flutter, wordpress, mui],
+    icons: [bootstrap, flutter, wordpress, mui, ts],
   },
 ];
