@@ -58,7 +58,7 @@ const Home = () => {
         <div className="absolute -bottom-10 bg-violet-700 opacity-30 right-[30%] w-10 h-10 rounded-full animate-up animation-delay-4000"></div>
 
         <a href="#portfolio" className="absolute bottom-12 right-3">
-          <img src={arrowDown} alt="" className="w-40" />
+          <img src={arrowDown} alt="arrow down" className="w-40" />
         </a>
       </div>
       <div>

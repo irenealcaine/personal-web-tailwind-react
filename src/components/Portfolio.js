@@ -26,12 +26,12 @@ const Portfolio = () => {
               <Link
                 to={`/portfolio/${data.id}`}
                 key={key}
-                className="w-60 sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-violet-700 rounded-xl"
+                className="w-60 sm:w-5/12 md:w-3/12 max-w-64 group relative overflow-hidden border-2 border-violet-700 rounded-xl"
               >
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img
                   src={data.favicon}
-                  alt=""
+                  alt={data.favicon}
                   className="w-full group-hover:scale-150 transition-all duration-500 "
                 />
                 <p className="font-caveat text-2xl p-6 absolute -top-full left-1 group-hover:top-0 transition-all duration-500 z-50">

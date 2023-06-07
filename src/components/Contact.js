@@ -57,7 +57,7 @@ const Contact = () => {
                 rel="noreferrer"
                 className="mx-3 p-1"
               >
-                <img src={mail} alt="" className="h-6 inline-block " />{" "}
+                <img src={mail} alt="mail" className="h-6 inline-block " />{" "}
                 irenealcainealvarez@gmail.com
               </a>
               <a
@@ -66,7 +66,7 @@ const Contact = () => {
                 className="mx-3 p-1"
                 rel="noreferrer"
               >
-                <img src={phone} alt="" className="h-6 inline-block" />
+                <img src={phone} alt="phone" className="h-6 inline-block" />
                 +34 629 88 21 29
               </a>
             </div>
