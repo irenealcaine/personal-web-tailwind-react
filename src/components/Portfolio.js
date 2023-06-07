@@ -26,7 +26,7 @@ const Portfolio = () => {
               <Link
                 to={`/portfolio/${data.id}`}
                 key={key}
-                className="w-60 sm:w-5/12 md:w-3/12 group relative overflow-hidden border-2 border-violet-700 rounded-xl"
+                className="w-60 sm:w-5/12 md:w-3/12 max-w-64 group relative overflow-hidden border-2 border-violet-700 rounded-xl"
               >
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img
