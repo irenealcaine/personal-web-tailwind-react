@@ -55,18 +55,7 @@ const Header = () => {
           </div>
           <div className="md:flex md:items-center">
             <div className="flex items-center mx-1 md:mx-4 gap-1 md:mt-0 mt-2">
-              <a
-                href="https://codepen.io/ialcaine"
-                target={"_blank"}
-                rel="noreferrer"
-                className="text-3xl"
-              >
-                <UseAnimations
-                  animation={codepen}
-                  strokeColor="#fff"
-                  size={32}
-                />
-              </a>
+              
               <a
                 href="https://www.github.com/irenealcaine"
                 target={"_blank"}
@@ -86,6 +75,18 @@ const Header = () => {
               >
                 <UseAnimations
                   animation={linkedin}
+                  strokeColor="#fff"
+                  size={32}
+                />
+              </a>
+              <a
+                href="https://codepen.io/ialcaine"
+                target={"_blank"}
+                rel="noreferrer"
+                className="text-3xl"
+              >
+                <UseAnimations
+                  animation={codepen}
                   strokeColor="#fff"
                   size={32}
                 />
