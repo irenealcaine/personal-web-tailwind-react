@@ -38,7 +38,7 @@ const Skills = () => {
                   <TabPanel>
                     <div className="flex flex-wrap justify-center border-2 border-violet-700 rounded-xl p-1 mx-auto mt-2">
                       {data.icons.map((s) => (
-                        <img src={s} alt="" className="md:h-16 h-10 m-3" />
+                        <img src={s} alt={s} className="md:h-16 h-10 m-3" />
                       ))}
                     </div>
                   </TabPanel>
