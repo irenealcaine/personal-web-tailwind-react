@@ -4,6 +4,7 @@ import React from "react";
 
 import github from "react-useanimations/lib/github";
 import linkedin from "react-useanimations/lib/linkedin";
+import codepen from "react-useanimations/lib/codepen";
 import UseAnimations from "react-useanimations";
 
 const Footer = () => {
@@ -35,6 +36,16 @@ const Footer = () => {
          
           <UseAnimations animation={linkedin} strokeColor="#fff" size={32} />
           linkedin.com/in/irenealcaine/
+        </a>
+                <a
+          href="https://codepen.io/ialcaine"
+          target={"_blank"}
+          rel="noreferrer"
+          className="flex items-center gap-2 hover:font-bold hover:text-violet-600 transition-all duration-200 mx-3 mb-1 border-b-2 border-violet-900"
+        >
+         
+          <UseAnimations animation={codepen} strokeColor="#fff" size={32} />
+          codepen.io/ialcaine
         </a>
       </div>
     </>
