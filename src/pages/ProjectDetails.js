@@ -9,6 +9,12 @@ const ProjectDetails = () => {
   const { id } = useParams();
   const project = portfolioData.find((project) => project.id === parseInt(id));
 
+  const renderIcons = () => {
+    return project.icons.map((icon, index) => (
+      <img key={index} src={icon} alt="icon" className="h-8" />
+    ));
+  };
+
   return (
     <div>
       <Header />
@@ -39,11 +45,7 @@ const ProjectDetails = () => {
                 {project.description}
               </h2>
             </div>
-            <div className="flex p-4 gap-4">
-              {project.icons.map((icon) => {
-                return <img src={icon} alt="icon" className="h-8" />;
-              })}
-            </div>
+            <div className="flex p-4 gap-4">{renderIcons()}</div>
             <p className="mb-4 indent-4 text-justify">
               {project.longDescription}
             </p>
@@ -53,7 +55,7 @@ const ProjectDetails = () => {
                 text="Ir a la web"
                 design="primary"
                 className="text-2xl"
-                target={"_blank"}
+                target="_blank"
                 rel="noreferrer"
               />
               <Button
@@ -61,7 +63,7 @@ const ProjectDetails = () => {
                 text="Ir al repo"
                 design="primary"
                 className="text-2xl"
-                target={"_blank"}
+                target="_blank"
                 rel="noreferrer"
               />
             </div>
