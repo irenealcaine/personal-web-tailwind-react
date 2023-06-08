@@ -43,7 +43,10 @@ const Contact = () => {
 
   return (
     <>
-      <div id="contact" className="md:min-h-screen flex flex-col items-center">
+      <section
+        id="contact"
+        className="md:min-h-screen flex flex-col items-center"
+      >
         <h2 className="pt-20 text-center text-6xl md:text-8xl text-white font-caveat">
           <span>Contacto</span>
         </h2>
@@ -119,7 +122,7 @@ const Contact = () => {
             {result && <Result />}
           </form>
         </div>
-      </div>
+      </section>
     </>
   );
 };
