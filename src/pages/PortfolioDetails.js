@@ -38,7 +38,6 @@ const filterOptions = [
 
 const PortfolioDetails = () => {
   const [filter, setFilter] = useState("all");
-
   const handleFilterChange = (value) => {
     setFilter(value);
   };
@@ -55,23 +54,22 @@ const PortfolioDetails = () => {
         <Button href="/" text="Atrás" design="primary" className="text-2xl" />
       </div>
       <div className="flex flex-wrap w-10/12 mx-auto justify-center items-center gap-2 p-4">
-        {filterOptions.map((option, index) => {
+        {filterOptions.map((option) => {
           return option.icon ? (
             <img
-              key={index}
               src={option.icon}
               alt="icono"
               className={`${
                 filter === option.value ? "bg-violet-700/50" : ""
               } h-9 md:h-16 border border-transparent p-1 md:p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
-              onClick={handleFilterChange}
+              onClick={() => handleFilterChange(option.value)}
             />
           ) : (
             <p
               className={`${
                 filter === option.value ? "bg-violet-700/50" : ""
               } md:text-xl py-2 px-4 border border-transparent p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
-              onClick={handleFilterChange}
+              onClick={() => handleFilterChange(option.value)}
             >
               {option.text}
             </p>
@@ -102,9 +100,8 @@ const PortfolioDetails = () => {
                 <div className="leading-tight p-2 lg:p-6 text-right absolute -bottom-full right-1 group-hover:bottom-0 transition-all duration-500 z-50">
                   {data.description}
                   <div className="flex justify-end gap-1 mt-1">
-                    {data.icons.map((icon, index) => (
+                    {data.icons.map((icon) => (
                       <img
-                        key={index}
                         src={icon}
                         alt="icono"
                         className="h-8 p-1 transition-all duration-500 ease-in-out border border-violet-500 rounded-lg"
