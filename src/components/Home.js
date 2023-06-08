@@ -7,6 +7,66 @@ import Skills from "../components/Skills";
 import Button from "./Button";
 
 const Home = () => {
+  // const renderAnimatedCircles = () => {
+  //   const circles = [
+  //     { color: "violet-700", opacity: 40, right: "50%", width: 8 },
+  //     { color: "pink-700", opacity: 20, right: "32.5%", width: 12 },
+  //     { color: "violet-700", opacity: 50, right: "25%", width: 6 },
+  //     { color: "pink-700", opacity: 60, right: "17.5%", width: 4 },
+  //     { color: "violet-700", opacity: 20, right: "15%", width: 12 },
+  //     { color: "pink-700", opacity: 40, right: "22.5%", width: 8 },
+  //     { color: "violet-700", opacity: 50, right: "45%", width: 6 },
+  //     { color: "pink-700", opacity: 20, right: "12.5%", width: 12 },
+  //     { color: "violet-700", opacity: 60, right: "10%", width: 4 },
+  //     { color: "pink-700", opacity: 50, right: "47.5%", width: 6 },
+  //     { color: "violet-700", opacity: 40, right: "20%", width: 8 },
+  //     { color: "pink-700", opacity: 20, right: "42.5%", width: 12 },
+  //     { color: "violet-700", opacity: 30, right: "15%", width: 10 },
+  //     { color: "pink-700", opacity: 60, right: "17.5%", width: 4 },
+  //     { color: "violet-700", opacity: 30, right: "35%", width: 10 },
+  //     { color: "pink-700", opacity: 50, right: "27.5%", width: 6 },
+  //     { color: "violet-700", opacity: 30, right: "30%", width: 10 },
+  //   ];
+
+  //   return circles.map((circle, index) => (
+  //     <div
+  //       key={index}
+  //       className={`absolute -bottom-10 bg-${circle.color} opacity-${
+  //         circle.opacity
+  //       } right-[${circle.right}] w-${circle.width} h-${
+  //         circle.width
+  //       } rounded-full animate-up animation-delay-${index * 250}`}
+  //     ></div>
+  //   ));
+  // };
+
+  const renderAnimatedCircles = () => {
+    const circles = Array.from({ length: 24 }, (_, index) => ({
+      color: randomColor(),
+      opacity: randomOpacity(),
+      right: randomPosition(),
+      width: randomSize(),
+      delay: index * 250,
+    }));
+
+    return circles.map((circle, index) => (
+      <div
+        key={index}
+        className={`absolute -bottom-10 bg-${circle.color} opacity-${circle.opacity} right-[${circle.right}] w-${circle.width} h-${circle.width} rounded-full animate-up animation-delay-${circle.delay}`}
+      ></div>
+    ));
+  };
+
+  const randomColor = () => {
+    const colors = ["violet-700", "pink-700"];
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    return colors[randomIndex];
+  };
+
+  const randomOpacity = () => Math.floor(Math.random() * 5) * 10 + 10;
+  const randomPosition = () => `${Math.floor(Math.random() * 11) * 2.5 + 10}%`;
+  const randomSize = () => Math.floor(Math.random() * 6) * 2 + 4;
+
   return (
     <>
       <div className="h-screen relative" id="home">
@@ -27,11 +87,6 @@ const Home = () => {
           <span>Frontend developer</span>
         </h2>
 
-        {/* <a href="#contact">
-          <button className=" font-caveat text-3xl hover:bg-white hover:text-violet-900 font-bold border-2 hover:border-violet-900 rounded py-1 px-6 bg-violet-900 text-white border-white ml-4 md:ml-12 mt-10  transition-all duration-500 ease-in-out">
-            Charlemos
-          </button>
-        </a> */}
         <Button
           href="#contact"
           text="Charlemos"
@@ -39,7 +94,9 @@ const Home = () => {
           className="text-3xl ml-4 md:ml-12 mt-10"
         />
 
-        <div className="absolute -bottom-10 bg-violet-700 opacity-40 right-[50%] w-8 h-8 rounded-full animate-up"></div>
+        {renderAnimatedCircles()}
+
+        {/* <div className="absolute -bottom-10 bg-violet-700 opacity-40 right-[50%] w-8 h-8 rounded-full animate-up"></div>
         <div className="absolute -bottom-10 bg-pink-700 opacity-20 right-[32.5%] w-12 h-12 rounded-full animate-up animation-delay-250"></div>
         <div className="absolute -bottom-10 bg-violet-700 opacity-50 right-[25%] w-6 h-6 rounded-full animate-up animation-delay-500"></div>
         <div className="absolute -bottom-10 bg-pink-700 opacity-60 right-[17.5%] w-4 h-4 rounded-full animate-up animation-delay-750"></div>
@@ -55,7 +112,7 @@ const Home = () => {
         <div className="absolute -bottom-10 bg-pink-700 opacity-60 right-[07.5%] w-4 h-4 rounded-full animate-up animation-delay-3250"></div>
         <div className="absolute -bottom-10 bg-violet-700 opacity-30 right-[35%] w-10 h-10 rounded-full animate-up animation-delay-3500"></div>
         <div className="absolute -bottom-10 bg-pink-700 opacity-50 right-[27.5%] w-6 h-6 rounded-full animate-up animation-delay-3750"></div>
-        <div className="absolute -bottom-10 bg-violet-700 opacity-30 right-[30%] w-10 h-10 rounded-full animate-up animation-delay-4000"></div>
+        <div className="absolute -bottom-10 bg-violet-700 opacity-30 right-[30%] w-10 h-10 rounded-full animate-up animation-delay-4000"></div> */}
 
         <a href="#portfolio" className="absolute bottom-12 right-3">
           <img src={arrowDown} alt="arrow down" className="w-40" />

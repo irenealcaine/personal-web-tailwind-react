@@ -54,6 +54,54 @@ html {
   .animation-delay-4000 {
     animation-delay: 4s;
   }
+  .animation-delay-4250 {
+    animation-delay: 4.25s;
+  }
+  .animation-delay-4500 {
+    animation-delay: 4.5s;
+  }
+  .animation-delay-4750 {
+    animation-delay: 4.75s;
+  }
+  .animation-delay-5000 {
+    animation-delay: 5s;
+  }
+  .animation-delay-5250 {
+    animation-delay: 5.25s;
+  }
+  .animation-delay-5500 {
+    animation-delay: 5.5s;
+  }
+  .animation-delay-5750 {
+    animation-delay: 5.75s;
+  }
+  .animation-delay-6000 {
+    animation-delay: 6s;
+  }
+  .animation-delay-6250 {
+    animation-delay: 6.25s;
+  }
+  .animation-delay-6500 {
+    animation-delay: 6.5s;
+  }
+  .animation-delay-6750 {
+    animation-delay: 6.75s;
+  }
+  .animation-delay-7000 {
+    animation-delay: 7s;
+  }
+  .animation-delay-7250 {
+    animation-delay: 7.25s;
+  }
+  .animation-delay-7500 {
+    animation-delay: 7.5s;
+  }
+  .animation-delay-7750 {
+    animation-delay: 7.75s;
+  }
+  .animation-delay-8000 {
+    animation-delay: 8s;
+  }
 }
 
 @font-face {
