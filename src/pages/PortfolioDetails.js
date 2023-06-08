@@ -102,8 +102,9 @@ const PortfolioDetails = () => {
                 <div className="leading-tight p-2 lg:p-6 text-right absolute -bottom-full right-1 group-hover:bottom-0 transition-all duration-500 z-50">
                   {data.description}
                   <div className="flex justify-end gap-1 mt-1">
-                    {data.icons.map((icon) => (
+                    {data.icons.map((icon, index) => (
                       <img
+                        key={index}
                         src={icon}
                         alt="icono"
                         className="h-8 p-1 transition-all duration-500 ease-in-out border border-violet-500 rounded-lg"
