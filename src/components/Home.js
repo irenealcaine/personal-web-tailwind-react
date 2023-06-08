@@ -7,65 +7,65 @@ import Skills from "../components/Skills";
 import Button from "./Button";
 
 const Home = () => {
-  // const renderAnimatedCircles = () => {
-  //   const circles = [
-  //     { color: "violet-700", opacity: 40, right: "50%", width: 8 },
-  //     { color: "pink-700", opacity: 20, right: "32.5%", width: 12 },
-  //     { color: "violet-700", opacity: 50, right: "25%", width: 6 },
-  //     { color: "pink-700", opacity: 60, right: "17.5%", width: 4 },
-  //     { color: "violet-700", opacity: 20, right: "15%", width: 12 },
-  //     { color: "pink-700", opacity: 40, right: "22.5%", width: 8 },
-  //     { color: "violet-700", opacity: 50, right: "45%", width: 6 },
-  //     { color: "pink-700", opacity: 20, right: "12.5%", width: 12 },
-  //     { color: "violet-700", opacity: 60, right: "10%", width: 4 },
-  //     { color: "pink-700", opacity: 50, right: "47.5%", width: 6 },
-  //     { color: "violet-700", opacity: 40, right: "20%", width: 8 },
-  //     { color: "pink-700", opacity: 20, right: "42.5%", width: 12 },
-  //     { color: "violet-700", opacity: 30, right: "15%", width: 10 },
-  //     { color: "pink-700", opacity: 60, right: "17.5%", width: 4 },
-  //     { color: "violet-700", opacity: 30, right: "35%", width: 10 },
-  //     { color: "pink-700", opacity: 50, right: "27.5%", width: 6 },
-  //     { color: "violet-700", opacity: 30, right: "30%", width: 10 },
-  //   ];
-
-  //   return circles.map((circle, index) => (
-  //     <div
-  //       key={index}
-  //       className={`absolute -bottom-10 bg-${circle.color} opacity-${
-  //         circle.opacity
-  //       } right-[${circle.right}] w-${circle.width} h-${
-  //         circle.width
-  //       } rounded-full animate-up animation-delay-${index * 250}`}
-  //     ></div>
-  //   ));
-  // };
-
   const renderAnimatedCircles = () => {
-    const circles = Array.from({ length: 24 }, (_, index) => ({
-      color: randomColor(),
-      opacity: randomOpacity(),
-      right: randomPosition(),
-      width: randomSize(),
-      delay: index * 250,
-    }));
+    const circles = [
+      { color: "violet-700", opacity: 40, right: "50%", width: 8 },
+      { color: "pink-700", opacity: 20, right: "32.5%", width: 12 },
+      { color: "violet-700", opacity: 50, right: "25%", width: 6 },
+      { color: "pink-700", opacity: 60, right: "17.5%", width: 4 },
+      { color: "violet-700", opacity: 20, right: "15%", width: 12 },
+      { color: "pink-700", opacity: 40, right: "22.5%", width: 8 },
+      { color: "violet-700", opacity: 50, right: "45%", width: 6 },
+      { color: "pink-700", opacity: 20, right: "12.5%", width: 12 },
+      { color: "violet-700", opacity: 60, right: "10%", width: 4 },
+      { color: "pink-700", opacity: 50, right: "47.5%", width: 6 },
+      { color: "violet-700", opacity: 40, right: "20%", width: 8 },
+      { color: "pink-700", opacity: 20, right: "42.5%", width: 12 },
+      { color: "violet-700", opacity: 30, right: "15%", width: 10 },
+      { color: "pink-700", opacity: 60, right: "17.5%", width: 4 },
+      { color: "violet-700", opacity: 30, right: "35%", width: 10 },
+      { color: "pink-700", opacity: 50, right: "27.5%", width: 6 },
+      { color: "violet-700", opacity: 30, right: "30%", width: 10 },
+    ];
 
     return circles.map((circle, index) => (
       <div
         key={index}
-        className={`absolute -bottom-10 bg-${circle.color} opacity-${circle.opacity} right-[${circle.right}] w-${circle.width} h-${circle.width} rounded-full animate-up animation-delay-${circle.delay}`}
+        className={`absolute -bottom-10 bg-${circle.color} opacity-${
+          circle.opacity
+        } right-[${circle.right}] w-${circle.width} h-${
+          circle.width
+        } rounded-full animate-up animation-delay-${index * 250}`}
       ></div>
     ));
   };
 
-  const randomColor = () => {
-    const colors = ["violet-700", "pink-700"];
-    const randomIndex = Math.floor(Math.random() * colors.length);
-    return colors[randomIndex];
-  };
+  // const renderAnimatedCircles = () => {
+  //   const circles = Array.from({ length: 24 }, (_, index) => ({
+  //     color: randomColor(),
+  //     opacity: randomOpacity(),
+  //     right: randomPosition(),
+  //     width: randomSize(),
+  //     delay: index * 250,
+  //   }));
 
-  const randomOpacity = () => Math.floor(Math.random() * 5) * 10 + 10;
-  const randomPosition = () => `${Math.floor(Math.random() * 11) * 2.5 + 10}%`;
-  const randomSize = () => Math.floor(Math.random() * 6) * 2 + 4;
+  //   return circles.map((circle, index) => (
+  //     <div
+  //       key={index}
+  //       className={`absolute -bottom-10 bg-${circle.color} opacity-${circle.opacity} right-[${circle.right}] w-${circle.width} h-${circle.width} rounded-full animate-up animation-delay-${circle.delay}`}
+  //     ></div>
+  //   ));
+  // };
+
+  // const randomColor = () => {
+  //   const colors = ["violet-700", "pink-700"];
+  //   const randomIndex = Math.floor(Math.random() * colors.length);
+  //   return colors[randomIndex];
+  // };
+
+  // const randomOpacity = () => Math.floor(Math.random() * 5) * 10 + 10;
+  // const randomPosition = () => `${Math.floor(Math.random() * 11) * 2.5 + 10}%`;
+  // const randomSize = () => Math.floor(Math.random() * 6) * 2 + 4;
 
   return (
     <>
