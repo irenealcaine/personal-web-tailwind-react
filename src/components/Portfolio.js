@@ -7,7 +7,7 @@ import Button from "./Button";
 
 const Portfolio = () => {
   return (
-    <>
+    
       <div className="md:min-h-screen flex flex-col" id="portfolio">
         <h2 className="pt-20 text-center text-6xl md:text-8xl text-white font-caveat mb-8">
           <span>Proyectos</span>
@@ -40,8 +40,9 @@ const Portfolio = () => {
                 <div className="p-4 text-right absolute -bottom-full right-1 group-hover:bottom-0 transition-all duration-500 z-50">
                   {data.description}
                   <div className="flex justify-end gap-1">
-                    {data.icons.map((icon) => (
+                    {data.icons.map((icon, iconKey) => (
                       <img
+                      key={iconKey}
                         src={icon}
                         alt="icono"
                         className="h-8 md:h-12 md:p-2 p-1 transition-all duration-500 ease-in-out border border-violet-500 rounded-lg"
@@ -54,7 +55,7 @@ const Portfolio = () => {
           })}
         </div>
       </div>
-    </>
+    
   );
 };
 
