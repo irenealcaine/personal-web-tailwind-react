@@ -26,6 +26,8 @@ const Home = () => {
       { color: "violet-700", opacity: 30, right: "35%", width: 10 },
       { color: "pink-700", opacity: 50, right: "27.5%", width: 6 },
       { color: "violet-700", opacity: 30, right: "30%", width: 10 },
+      { color: "pink-700", opacity: 20, right: "27.5%", width: 12 },
+      { color: "violet-700", opacity: 60, right: "30%", width: 4 },
     ];
 
     return circles.map((circle, index) => (
@@ -39,6 +41,8 @@ const Home = () => {
       ></div>
     ));
   };
+  
+  //INTENTANDO QUE SEA ALEATORIO
 
   // const renderAnimatedCircles = () => {
   //   const circles = Array.from({ length: 24 }, (_, index) => ({

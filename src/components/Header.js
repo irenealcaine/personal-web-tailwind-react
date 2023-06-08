@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import openMenu from "../images/menu.png";
 import closeMenu from "../images/close.png";
 import Button from "./Button";
@@ -10,6 +9,25 @@ import UseAnimations from "react-useanimations";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const menuImage = open ? closeMenu : openMenu;
+  const handleLinkClick = () => {
+    setOpen(!open);
+  };
+  const socialLinks = [
+    {
+      href: "https://www.github.com/irenealcaine",
+      animation: github,
+    },
+    {
+      href: "https://www.linkedin.com/in/irenealcaine/",
+      animation: linkedin,
+    },
+    {
+      href: "https://codepen.io/ialcaine",
+      animation: codepen,
+    },
+  ];
+
   return (
     <>
       <nav
@@ -20,8 +38,8 @@ const Header = () => {
         </a>
         <img
           className="absolute top-4 right-7 md:hidden w-8 h-8"
-          src={`${open ? closeMenu : openMenu}`}
-          alt=""
+          src={menuImage}
+          alt="open/close"
           onClick={() => {
             setOpen(!open);
           }}
@@ -37,60 +55,35 @@ const Header = () => {
             <a
               href="/#portfolio"
               className="px-2 hover:underline"
-              onClick={() => {
-                setOpen(!open);
-              }}
+              onClick={handleLinkClick}
             >
               Proyectos
             </a>
             <a
               href="/#skills"
               className="px-2 hover:underline"
-              onClick={() => {
-                setOpen(!open);
-              }}
+              onClick={handleLinkClick}
             >
               Habilidades
             </a>
           </div>
           <div className="md:flex md:items-center">
             <div className="flex items-center mx-1 md:mx-4 gap-1 md:mt-0 mt-2">
-              
-              <a
-                href="https://www.github.com/irenealcaine"
-                target={"_blank"}
-                rel="noreferrer"
-                className="text-3xl"
-              >
-                <UseAnimations
-                  animation={github}
-                  strokeColor="#fff"
-                  size={32}
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/irenealcaine/"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <UseAnimations
-                  animation={linkedin}
-                  strokeColor="#fff"
-                  size={32}
-                />
-              </a>
-              <a
-                href="https://codepen.io/ialcaine"
-                target={"_blank"}
-                rel="noreferrer"
-                className="text-3xl"
-              >
-                <UseAnimations
-                  animation={codepen}
-                  strokeColor="#fff"
-                  size={32}
-                />
-              </a>
+              {socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="text-3xl"
+                >
+                  <UseAnimations
+                    animation={link.animation}
+                    strokeColor="#fff"
+                    size={32}
+                  />
+                </a>
+              ))}
             </div>
 
             <Button
