@@ -94,7 +94,7 @@ const Contact = () => {
                   <input
                     id="mail"
                     name="from_mail"
-                    type="mail"
+                    type="email"
                     placeholder="Correo"
                     className="bg-transparent outline-none ring-0 placeholder:text-violet-200 placeholder:opacity-50 border-0 border-b-2 border-violet-700 px-4 py-2 w-full focus:bg-violet-900 valid:bg-violet-900  valid:bg-opacity-50 focus:rounded-lg valid:rounded-lg transition-all duration-500 ease-in-out mt-4"
                     required
@@ -116,7 +116,7 @@ const Contact = () => {
                 Enviar email
               </button>
             </div>
-            {result ? <Result /> : null}
+            {result && <Result />}
           </form>
         </div>
       </div>

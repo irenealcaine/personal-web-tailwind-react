@@ -38,6 +38,9 @@ const filterOptions = [
 
 const PortfolioDetails = () => {
   const [filter, setFilter] = useState("all");
+  const handleFilterChange = (value) => {
+    setFilter(value);
+  };
 
   return (
     <>
@@ -59,18 +62,14 @@ const PortfolioDetails = () => {
               className={`${
                 filter === option.value ? "bg-violet-700/50" : ""
               } h-9 md:h-16 border border-transparent p-1 md:p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
-              onClick={() => {
-                setFilter(option.value);
-              }}
+              onClick={() => handleFilterChange(option.value)}
             />
           ) : (
             <p
               className={`${
                 filter === option.value ? "bg-violet-700/50" : ""
               } md:text-xl py-2 px-4 border border-transparent p-2 hover:border-violet-700 hover:bg-violet-700/40 rounded-lg transition-all duration-500 cursor-pointer`}
-              onClick={() => {
-                setFilter(option.value);
-              }}
+              onClick={() => handleFilterChange(option.value)}
             >
               {option.text}
             </p>
