@@ -10,7 +10,7 @@ import CV from "../cv/CV_Irene_Alcaine_FEB.pdf";
 
 const Skills = () => {
   return (
-    <div className="md:min-h-screen flex flex-col" id="skills">
+    <section className="md:min-h-screen flex flex-col" id="skills">
       <h2 className="pt-20 text-center text-6xl md:text-8xl text-white font-caveat mb-4">
         <span>Habilidades</span>
       </h2>
@@ -132,7 +132,7 @@ const Skills = () => {
           className="md:text-3xl mt-8 md:w-1/2 w-5/6 mx-auto flex justify-center"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
