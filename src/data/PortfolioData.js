@@ -53,7 +53,7 @@ export const portfolioData = [
   },
   {
     id: 20,
-    url: "https://app.amigaria.com/login",
+    url: "https://amigaria-app.vercel.app/login",
     github: "https://github.com/AmigariaWeb/web-app",
     img: amigaria,
     favicon: amigariafav,
